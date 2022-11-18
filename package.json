@@ -9,7 +9,6 @@
     "generate": "nuxi generate && rm -rf docs && mv .output/public docs && touch docs/.nojekyll"
   },
   "devDependencies": {
-    "@nuxt-themes/docus": "0.3.1",
-    "nuxt": "^3.0.0"
+    "nuxt": "3.0.0"
   }
 }
