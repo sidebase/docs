@@ -9,14 +9,13 @@ export default defineAppConfig({
             github: 'sidebase',
         },
         header: {
-            title: '🔐 nuxt-auth docs',
-            logo: false,
-            showLinkIcon: true
+            title: 'sidebase docs',
+            logo: true,
+            showLinkIcon: true,
+            exclude: ['/guide'],
         },
-        github: {
-            edit: true,
-            contributors: true,
-            root: 'content'
+        aside: {
+            level: 1
         },
     }
 })
