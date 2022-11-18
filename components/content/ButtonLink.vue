@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { computedStyle } from 'pinceau/runtime'
 defineProps({
   blank: {
     type: Boolean,
     required: false,
     default: false
   },
-  color: computedStyle('color', 'primary', false),
   href: {
     type: String,
     default: ''
