@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "generate": "nuxi build",
-    "preview": "nuxi preview"
+    "preview": "nuxi preview",
+    "generate": "nuxi generate && rm -rf docs && mv .output/public docs && touch docs/.nojekyll"
   },
   "devDependencies": {
     "@nuxt-themes/docus": "0.3.1",
