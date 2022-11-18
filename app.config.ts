@@ -12,10 +12,11 @@ export default defineAppConfig({
             title: 'sidebase docs',
             logo: true,
             showLinkIcon: true,
-            exclude: ['/guide'],
+            exclude: ['/nuxt-session', '/nuxt-parse'],
         },
         aside: {
-            level: 1
+            level: 1,
+            exclude: ['/guide', '/nuxt-session', '/nuxt-parse']
         },
     }
 })
