@@ -1,7 +1,7 @@
 export default defineAppConfig({
     docus: {
-        title: 'sidebase',
-        description: 'The official sidebase documentation.',
+        title: 'nuxt-auth',
+        description: 'The official nuxt-auth documentation.',
         url: 'https://sidebase.io',
         image: '/social-card-preview.png',
         socials: {

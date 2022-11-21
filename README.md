@@ -1,57 +1,27 @@
-# Docus Starter
+# `@sidebase/nuxt-auth` documentation
 
-Starter template for [Docus](https://docus.dev).
-
-## Clone
-
-Clone the repository (using `nuxi`):
-
-```bash
-npx nuxi init docs -t nuxt-themes/docus-starter
-```
+This repository contains the entire documentation for the module `@sidebase/nuxt-auth`.
 
 ## Setup
 
 Install dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Development
 
 ```bash
-yarn dev
+npm dev
 ```
 
-## Edge Side Rendering
+## Folder structure
 
-Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
+- `/content` - Markdown files that contain the information for the separate documentation pages
+- `/components` - Custom components used in our documentation
+- `/public` - Any media we need to display to the end user
 
-Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
+## Deployment
 
-```bash
-yarn build
-```
-
-## Static Generation
-
-Use the `generate` command to build your application.
-
-The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
-
-```bash
-yarn generate
-```
-
-## Preview build
-
-You might want to preview the result of your build locally, to do so, run the following command:
-
-```bash
-yarn preview
-```
-
----
-
-For a detailed explanation of how things work, check out [Docus](https://docus.dev).
+The documentation pages are hosted on GitHub Pages. In order to 

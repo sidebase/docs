@@ -1,5 +1,5 @@
 {
-  "name": "docus-starter",
+  "name": "nuxt-auth-docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "generate": "nuxi generate && rm -rf docs && mv .output/public docs && touch docs/.nojekyll"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "@nuxt-themes/docus": "^0.3.2",
+    "nuxt": "^3.0.0"
   }
 }
