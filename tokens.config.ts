@@ -13,6 +13,9 @@ export default defineTheme({
       700: { value: '#047857' },
       800: { value: '#065f46' },
       900: { value: '#064e3b' }
+    },
+    neutral: {
+      black: { value: '#0c0d0ccc' },
     }
   },
 })
