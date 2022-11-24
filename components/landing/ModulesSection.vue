@@ -57,12 +57,15 @@
   margin-right: 50px;
   transition: 0.5s;
   cursor: pointer;
+
+  @apply my-5 min-w-[310px] lg:min-w-[366px] lg:my-0;
 }
 
 .modules .card:hover {
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
   inset -5px -5px 15px rgba(255, 255, 255, 0.3),
-  5px 5px 15px rgba(0, 0, 0, 0.8), -5px -5px 15px rgba(255, 255, 255, 0.4);}
+  5px 5px 15px rgba(0, 0, 0, 0.8), -5px -5px 15px rgba(255, 255, 255, 0.4);
+}
 
 .modules .card .box {
   position: absolute;

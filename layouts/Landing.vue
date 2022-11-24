@@ -1,36 +1,64 @@
 <script setup>
 import ModulesSection from "../components/landing/ModulesSection";
+import TestimonialsSection from "../components/landing/TestimonialsSection";
+import FeaturesSection from "../components/landing/FeaturesSection";
 </script>
 
 <template>
-  <section class="Landing">
-    <article id="top-section">
-      <slot />
-    </article>
-    <div class="Heading">
-      <h1>
-        Our amazing <span class="GradientText">modules</span>!
-      </h1>
-      <p>
-        Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt3 modules.
-      </p>
+  <div class="relative">
+    <div class="absolute top-0 right-0 select-none">
+      <img src="/green-blur.png" />
     </div>
-    <ModulesSection />
-    <div class="Heading">
-      <h1>
-        What else is included?
-      </h1>
-      <p>
-        Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt3 modules.
-      </p>
+    <div class="absolute top-[84vh] left-0 select-none">
+      <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
-  </section>
+    <div class="Landing relative">
+      <article id="top-section">
+        <slot />
+      </article>
+      <section class="pb-6">
+        <div class="Heading">
+          <h1>
+            What is <span class="GradientText">sidebase</span>?
+          </h1>
+          <p>
+            sidebase is a production ready Nuxt3 starter template. Through the integration with our own modules, we ensure you can start developing quickly and efficiently.
+          </p>
+        </div>
+        <FeaturesSection />
+      </section>
+      <section class="py-6">
+        <div class="Heading">
+          <h1>
+            Our amazing <span class="GradientText">modules</span>!
+          </h1>
+          <p>
+            Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt3 modules.
+          </p>
+        </div>
+        <ModulesSection />
+      </section>
+      <section class="py-6">
+        <div class="Heading">
+          <h1>
+            What do others think of <span class="GradientText">sidebase</span>?
+          </h1>
+          <p>
+            The opinions of the community matter a lot to us! Have a look at what other developers have said about sidebase.
+          </p>
+        </div>
+        <TestimonialsSection />
+      </section>
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .Landing {
   max-width: 80rem;
-  margin: auto
+  margin: auto auto 5rem;
+
+  @apply mx-10 lg:mx-auto;
 }
 
 .Heading {

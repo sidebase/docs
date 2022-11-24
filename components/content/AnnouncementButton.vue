@@ -12,10 +12,14 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :to="to" class="AnnouncementButton">
+  <NuxtLink v-if="to" :to="to" class="AnnouncementButton">
     <Icon name="heroicons-solid:bolt" />
     <span class="font-medium text-sm">{{ label }}</span>
   </NuxtLink>
+  <div v-else class="AnnouncementButton cursor-default">
+    <Icon name="heroicons-solid:bolt" />
+    <span class="font-medium text-sm">{{ label }}</span>
+  </div>
 </template>
 
 <style scoped>
@@ -30,6 +34,8 @@ defineProps({
   max-width: fit-content;
   color: #1e5042;
   transition: all 300ms ease-in-out;
+
+  @apply hidden lg:flex;
 }
 
 .AnnouncementButton:hover {
