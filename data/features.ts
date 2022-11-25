@@ -3,7 +3,7 @@ import type { Feature } from '~/types'
 const features: Feature[] = [
   {
     icon: 'fa-object-ungroup',
-    description: 'Nuxt3 with Vue3 as the frontend',
+    description: 'Nuxt 3 with Vue 3 as the frontend',
   },
   {
     icon: 'fa-server',

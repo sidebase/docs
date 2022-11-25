@@ -97,16 +97,26 @@
 .modules .card .box .content h3 {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
+  color: #1c1c1c;
   z-index: 1;
   transition: 0.5s;
   margin-bottom: 15px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .modules .card .box .content h3 {
+    color: #fff;
+  }
+
+  .modules .card .box .content p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
 .modules .card .box .content p {
   font-size: 1rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(90, 89, 89, 0.9);
   z-index: 1;
   transition: 0.5s;
 }

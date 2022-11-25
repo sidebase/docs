@@ -9,7 +9,7 @@ import FeaturesSection from "../components/landing/FeaturesSection";
     <div class="absolute top-0 right-0 select-none">
       <img src="/green-blur.png" />
     </div>
-    <div class="absolute top-[84vh] left-0 select-none">
+    <div class="absolute top-[80vh] left-0 select-none">
       <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
     <div class="Landing relative">
@@ -22,7 +22,7 @@ import FeaturesSection from "../components/landing/FeaturesSection";
             What is <span class="GradientText">sidebase</span>?
           </h1>
           <p>
-            sidebase is a production ready Nuxt3 starter template. Through the integration with our own modules, we ensure you can start developing quickly and efficiently.
+            sidebase is a production ready Nuxt 3 starter template. Through the integration with our own modules, we ensure you can start developing quickly and efficiently.
           </p>
         </div>
         <FeaturesSection />
@@ -33,7 +33,7 @@ import FeaturesSection from "../components/landing/FeaturesSection";
             Our amazing <span class="GradientText">modules</span>!
           </h1>
           <p>
-            Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt3 modules.
+            Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt 3 modules.
           </p>
         </div>
         <ModulesSection />
@@ -73,7 +73,6 @@ import FeaturesSection from "../components/landing/FeaturesSection";
 .Heading p {
   max-width: 50rem;
   font-size: 1.3rem;
-  color: #a1a1aa;
 }
 
 .GradientText {

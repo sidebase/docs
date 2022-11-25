@@ -5,7 +5,7 @@ const testimonials: Testimonial[] = [
     name: 'Atinux',
     avatar: 'https://avatars.githubusercontent.com/u/904724?v=4',
     text: 'Beautiful work on sidebase!',
-    position: 'CEO of NuxtJS',
+    position: 'CEO of NuxtLabs',
     twitterLink: 'https://twitter.com/Atinux',
     githubLink: 'https://github.com/Atinux',
   },
