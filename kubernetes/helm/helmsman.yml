@@ -1,0 +1,35 @@
+context: default
+
+metadata:
+  org: "github.com/sidestream-tech/"
+  maintainer: "DevOps"
+  description: "Desired State File of the sidebase docs homepage deployment"
+
+settings:
+  kubeContext: "arn:aws:eks:eu-central-1:802385070966:cluster/eks-cluster-sidestream"
+  globalMaxHistory: 5
+
+namespaces:
+  sidebase-docs:
+    protected: false
+
+helmRepos:
+  sidechart: "https://$SIDECHART_USERNAME:$SIDECHART_TOKEN@raw.githubusercontent.com/sidestream-tech/helm-charts/gh-pages/"
+
+apps:
+  sidebase-docs:
+    namespace: "sidebase-docs"
+    enabled: true
+    chart: "sidechart/sidechart"
+    version: "0.2.1"
+    valuesFile: values-sidebase-docs.yml
+    test: false
+    protected: false
+    priority: -1
+    wait: true
+    helmFlags: [
+      "--atomic",
+    ]
+    set:
+      "commitShortSHA": "$DRONE_COMMIT_SHA"
+      "imageCredentials.password": "$GITHUB_PACKAGES_TOKEN"
