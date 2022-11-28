@@ -1,4 +1,6 @@
 <script setup>
+import BlogCard from "~/components/blog/BlogCard.vue";
+
 const contentQuery = await queryContent('blog/posts').find()
 </script>
 
@@ -16,29 +18,10 @@ const contentQuery = await queryContent('blog/posts').find()
               TODO: Add a description
             </p>
           </div>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
 
-            <div v-for="content in contentQuery" :key="content._id"
-                 class="group p-6 sm:p-8 rounded-3xl bg-white dark:shadow-none dark:bg-black bg-opacity-50 shadow-2xl shadow-gray-600/10">
-              <div class="relative overflow-hidden rounded-xl">
-                <img
-                    :src="content.image"
-                    alt="art cover" loading="lazy" width="1000" height="667"
-                    class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-              </div>
-              <div class="mt-6 relative">
-                <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-                  {{ content.title }}
-                </h3>
-                <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-                  {{content.description}}
-                </p>
-                <a class="inline-block" href="#">
-                  <span class="text-primary">Read more</span>
-                </a>
-              </div>
-            </div>
+           <BlogCard v-for="post in contentQuery" :post="post" :key="post._id"/>
 
 
           </div>
