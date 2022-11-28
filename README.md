@@ -69,6 +69,6 @@ Variables:
 - published - Must be set to `true`, otherwise the post will not be shown on the overview page. Can however still be accessed with the link.
 
 After writing your post, please move it to `~/content/5.blog/posts`. The name of your file, will become the url slug. 
-A file named `creating-your-first-sidebase-project.md` will be accessible on `sidebase.io/blog/posts/creating-your-first-sidebase-project`. 
+A file named `creating-your-first-sidebase-project.md` will be accessible on `https://sidebase.io/blog/posts/creating-your-first-sidebase-project`. 
 
 Therefore, try to be descriptive with your slugs to ensure users can preview what the article will be about, just by the link.
