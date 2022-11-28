@@ -32,4 +32,5 @@ apps:
     ]
     set:
       "commitShortSHA": "$DRONE_COMMIT_SHA"
+      "image.tag": "$DRONE_COMMIT_SHA"
       "imageCredentials.password": "$GITHUB_PACKAGES_TOKEN"
