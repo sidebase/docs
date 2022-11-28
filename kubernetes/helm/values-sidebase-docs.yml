@@ -20,7 +20,7 @@ service:
     external-dns.alpha.kubernetes.io/hostname: v2.sidebase.io
   ports:
     http:
-      port: 80
+      port: 3000
   health: /api/health
   env:
     - name: "GREET"
