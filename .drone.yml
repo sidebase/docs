@@ -1,5 +1,5 @@
 kind: template
-load: pipeline-builder.star.starlark
+load: pipelineBuilder.starlark
 data:
   builds:
     - name: publish-sidebase-docs-on-pr-push
