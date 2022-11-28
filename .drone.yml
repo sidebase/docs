@@ -10,7 +10,7 @@ steps:
   image: plugins/docker
 
   settings:
-    repo: ghcr.io/sidebase/docs/sidebase-docs:main
+    repo: ghcr.io/sidebase/docs/sidebase-docs
     tags:
       - "pr-${DRONE_PULL_REQUEST}"
     custom_labels:
