@@ -21,7 +21,7 @@ service:
   ports:
     http:
       port: 80
-  health: /
+  health: /healthcheck
   env:
     - name: "GREET"
       value: "scaffoldWashere"
