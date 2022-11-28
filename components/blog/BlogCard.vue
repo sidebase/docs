@@ -1,17 +1,23 @@
-<script setup>
+<script setup lang="ts">
+import type { PropType } from 'vue'
+import {ParsedContent} from "@nuxt/content/dist/runtime/types";
+import FormatDate from "~/components/common/FormatDate.vue";
+
 defineProps({
   post: {
-    type: Object,
+    type: Object as PropType<ParsedContent>,
     required: true
   },
 })
 </script>
 
 <template>
-  <NuxtLink href="/nuxt-session">
+  <NuxtLink :href="post._path" v-if="post.published">
     <div class="BlogCard overflow-hidden">
-      <img :src="post.image" class="h-[180px] w-full" alt="Blog Post Preview" />
-      <div class="p-4 dark:text-gray-300">
+      <div class="h-[180px] overflow-hidden">
+        <img :src="post.image" class="min-h-[180px] w-full" alt="Blog Post Preview" />
+      </div>
+      <div class="py-5 px-6 dark:text-gray-300">
         <h3 class="text-2xl font-bold">
           {{post.title}}
         </h3>
@@ -19,16 +25,17 @@ defineProps({
           {{post.description}}
         </p>
 
-        <div class="flex w-full items-center space-x-3">
+        <div class="flex w-full items-center space-x-3 mt-10">
           <img
               :src="post.avatar"
-              class="ring-sidebase-green-800 h-14 w-14 rounded-full p-1 ring-2"
+              class="ring-sidebase-green-800 h-8 w-8 rounded-full p-1 ring-2"
               alt="Bordered avatar"
           >
+          <h1 class="w-full">
+            {{ post.author }}
+          </h1>
           <div>
-            <h1 class="text-lg text-gray-700 dark:text-gray-100">
-              {{ post.author }}
-            </h1>
+            <FormatDate :date="new Date(post.timestamp * 1000)" />
           </div>
         </div>
       </div>
@@ -40,7 +47,6 @@ defineProps({
 .BlogCard {
   position: relative;
   min-width: 366px;
-  height: 320px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0),
   inset -5px -5px 15px rgba(255, 255, 255, 0.1),
   5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
