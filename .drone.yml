@@ -14,9 +14,9 @@ data:
       build_args:
       tags_to_cache_from:
         - "main"
-      trigger:
-        event:
-          - pull_request
+      # trigger:
+      #   event:
+      #     - pull_request
 
     - name: publish-sidebase-docs-on-merge-main
       repository: ghcr.io/sidestream-tech/sidebase/docs
