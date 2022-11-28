@@ -98,5 +98,5 @@ steps:
     - aws eks update-kubeconfig --name eks-cluster-sidestream
     - helmsman --apply --debug -f helmsman.yml
 
-  depends_on:
-    - publish-sidebase-docs-on-merge-main
+depends_on:
+  - publish-sidebase-docs-on-merge-main
