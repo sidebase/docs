@@ -14,9 +14,9 @@ data:
       build_args:
       tags_to_cache_from:
         - "main"
-      # trigger:
-      #   event:
-      #     - pull_request
+      trigger:
+        event:
+          - pull_request
 
     - name: publish-sidebase-docs-on-merge-main
       repository: ghcr.io/sidestream-tech/sidebase/docs
@@ -34,40 +34,49 @@ data:
       trigger:
         event:
           - push
+        # branch:
+        #   - main
+
+  pipelines:
+    - kind: pipeline
+      types: kubernetes
+      name: deploy_sidebase-docs
+
+      environment:
+        GIT_LFS_SKIP_SMUDGE: 1
+
+      clone:
+        depth: 1
+
+      trigger:
+        event:
+          - push
         branch:
           - main
 
-  pipelines:
-  - kind: pipeline
-    types: kubernetes
-    name: sidebase-docs-deployment
-    environment:
-      GIT_LFS_SKIP_SMUDGE: 1
-    clone:
-      depth: 1
-    trigger:
-      event:
-        - push
-      branch:
-        - main
-    steps:
-      - name: deploy
-        image: deusavalon/aws-chamber-helmsman:0.1.0
-        environment:
-          AWS_ACCESS_KEY_ID:
-            from_secret: "AWS_ACCESS_KEY_ID_FOR_KUBECONFIG"
-          AWS_SECRET_ACCESS_KEY:
-            from_secret: "AWS_SECRET_ACCESS_KEY_FOR_KUBECONFIG"
-          AWS_DEFAULT_REGION: "eu-central-1"
-          SIDECHART_USERNAME:
-            from_secret: "SIDECHART_USERNAME"
-          SIDECHART_TOKEN:
-            from_secret: "SIDECHART_TOKEN"
-          GITHUB_PACKAGES_TOKEN:
-            from_secret: "GITHUB_PACKAGES_TOKEN"
-        commands:
-          - cd kubernetes/helm
-          - aws eks update-kubeconfig --name eks-cluster-sidestream
-          - helmsman --apply --debug -f helmsman.yml
-    depends_on:
-      - publish-sidebase-docs-on-merge-main
+      steps:
+        - name: deploy
+          image: deusavalon/aws-chamber-helmsman:0.1.0
+          environment:
+            AWS_ACCESS_KEY_ID:
+              from_secret: "AWS_ACCESS_KEY_ID_FOR_KUBECONFIG"
+            AWS_SECRET_ACCESS_KEY:
+              from_secret: "AWS_SECRET_ACCESS_KEY_FOR_KUBECONFIG"
+            AWS_DEFAULT_REGION: "eu-central-1"
+            KAS_API_KEY:
+              from_secret: "KAS_API_KEY"
+            KAS_CRYPTO_KEY:
+              from_secret: "KAS_CRYPTO_KEY"
+            SIGNING_KEY:
+              from_secret: "SIGNING_KEY"
+            SIDECHART_TOKEN:
+              from_secret: "SIDECHART_TOKEN"
+            SIDECHART_USERNAME:
+              from_secret: "SIDECHART_USERNAME"
+          commands:
+            - cd kubernetes/helm
+            - aws eks update-kubeconfig --name eks-cluster-sidestream
+            - helmsman --apply --debug -f helmsman.yaml
+
+      depends_on:
+        - publish-sidebase-docs-on-merge-main
