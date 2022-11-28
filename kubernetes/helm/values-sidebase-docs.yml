@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/sidestream-tech/sidebase/docs
+  repository: ghcr.io/sidebase/docs/sidebase-docs
   tag: main
   pullPolicy: IfNotPresent
 
