@@ -1,5 +1,5 @@
 <template>
-  <h1 class="GradientText text-8xl">
+  <h1 class="GradientText text-7xl xl:text-8xl">
     sidebase
   </h1>
 </template>

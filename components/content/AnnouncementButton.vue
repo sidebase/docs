@@ -39,7 +39,7 @@ defineProps({
   color: #1e5042;
   transition: all 300ms ease-in-out;
 
-  @apply hidden lg:flex;
+  @apply mx-auto lg:mx-0;
 }
 
 .AnnouncementButton:hover {
