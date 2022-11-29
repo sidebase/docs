@@ -7,17 +7,21 @@ defineProps({
   label: {
     type: String,
     default: ''
+  },
+  icon: {
+    type: String,
+    default: 'heroicons-solid:bolt'
   }
 })
 </script>
 
 <template>
   <NuxtLink v-if="to" :to="to" class="AnnouncementButton">
-    <Icon name="heroicons-solid:bolt" />
+    <Icon :name="icon" />
     <span class="font-medium text-sm">{{ label }}</span>
   </NuxtLink>
   <div v-else class="AnnouncementButton cursor-default">
-    <Icon name="heroicons-solid:bolt" />
+    <Icon :name="icon" />
     <span class="font-medium text-sm">{{ label }}</span>
   </div>
 </template>
@@ -35,7 +39,7 @@ defineProps({
   color: #1e5042;
   transition: all 300ms ease-in-out;
 
-  @apply hidden lg:flex;
+  @apply mx-auto lg:mx-0;
 }
 
 .AnnouncementButton:hover {
