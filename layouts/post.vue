@@ -22,7 +22,7 @@ const { page } = useContent()
               <NuxtLink :href="page.avatarLink" target="_blank">
                 <img class="mr-4 w-16 h-16 rounded-full" :src="page.avatar" :alt="page.author">
               </NuxtLink>
-              <div class="flex items-end justify-between w-full">
+              <div class="flex items-end justify-between w-full ml-2">
                 <NuxtLink :href="page.avatarLink" target="_blank">
                   <span rel="author" class="text-xl font-bold text-gray-900 dark:text-white">
                     {{page.author}}
@@ -31,7 +31,7 @@ const { page } = useContent()
                     {{page.position}}
                   </p>
                 </NuxtLink>
-                <p class="text-sm font-light text-gray-500 dark:text-gray-400 text-md">
+                <p class="hidden lg:block text-sm font-light text-gray-500 dark:text-gray-400 text-md">
                   Published on <FormatDate :date="new Date(page.timestamp * 1000)" />
                 </p>
               </div>
