@@ -7,7 +7,7 @@ const features: Feature[] = [
   },
   {
     icon: 'fa-server',
-    description: 'Database models, migrations and queries with TypeORM',
+    description: 'Database models, migrations and queries with Prisma',
   },
   {
     icon: 'fa-wrench',
