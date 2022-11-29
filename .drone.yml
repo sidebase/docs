@@ -64,7 +64,7 @@ steps:
 
 kind: pipeline
 types: kubernetes
-name: deploy_sidebase-docs
+name: deploy-sidebase-docs
 
 environment:
   GIT_LFS_SKIP_SMUDGE: 1
