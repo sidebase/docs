@@ -38,6 +38,9 @@ In addition to completely redesigning the page, we also decided to move our docu
 Through this switch we hope to make reading our documentation easier and more enjoyable. We all know that as good as docs on GitHub may be,
 a dedicated docs page will always be more enjoyable to read and use!
 
+We are currently still in the process of transferring all the pages. Therefore, some docs may be incomplete, however you can still find them in the 
+respective GitHub repositories.
+
 While we have already done a lot of work on our docs, we believe we are not finished yet. So be on the lookout for new examples, more detailed explanations 
 and much more!
 
