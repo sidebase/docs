@@ -31,3 +31,9 @@ Once changes to the docs are merged into the `main` branch in der folder
 be merged into this repository and the website will be redeployed.
 
 If you wish to edit the landing page or any blog entries, please open a PR on this repository.
+
+Please note: There is a bug where the page may refuse to display changes properly. If this happens please remove the `.nuxt` folder.
+
+```sh
+rm -R .nuxt
+```

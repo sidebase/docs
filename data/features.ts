@@ -7,35 +7,35 @@ const features: Feature[] = [
   },
   {
     icon: 'fa-server',
-    description: 'Data base models, migrations, queries and easy DB-switching via TypeORM',
+    description: 'Database models, migrations and queries with Prisma',
   },
   {
     icon: 'fa-wrench',
-    description: 'Strong data-validation using zod to validate all transferred data, fully typed API-routes, strict DB models via TypeORM.',
+    description: 'Strong data-validation using zod',
   },
   {
     icon: 'fa-rotate',
-    description: 'Frontend- and Backend data-transformation via nuxt-sidebase-parse and zod',
+    description: 'Integration with sidebase Nuxt 3 modules',
   },
   {
     icon: 'fa-database',
     description: 'In-memory development SQL-database via sqlite3',
   },
   {
-    icon: 'fa-outdent',
-    description: 'Linting through eslint',
-  },
-  {
     icon: 'fa-spell-check',
     description: 'Code testing via vitest, test-library/vue and supertest',
+  },
+  {
+    icon: 'fa-outdent',
+    description: 'Linting through eslint',
   },
   {
     icon: 'fa-gauge',
     description: 'Code coverage via C8',
   },
   {
-    icon: 'fa-book',
-    description: 'Component stories via histoire',
+    icon: 'fa-rocket',
+    description: 'Ready to deploy with docker',
   },
   {
     icon: 'fa-gear',
