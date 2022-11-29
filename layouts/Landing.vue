@@ -12,6 +12,9 @@ import FeaturesSection from "../components/landing/FeaturesSection";
     <div class="absolute top-[80vh] left-0 select-none">
       <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
+    <div class="absolute bottom-0 left-0 select-none">
+      <img class="w-[100vw] opacity-40" src="/glow-bottom.webp" />
+    </div>
     <div class="Landing relative">
       <article id="top-section">
         <slot />
