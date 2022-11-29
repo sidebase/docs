@@ -19,7 +19,7 @@ defineProps({
         <div class="flex w-full items-center space-x-3">
           <img
               :src="testimonial.avatar"
-              class="ring-sidebase-green-800 h-7 w-7 rounded-full p-1 ring-2"
+              class="ring-sidebase-green-800 h-12 w-12 rounded-full p-1 ring-2"
               alt="Bordered avatar"
           >
           <div>
