@@ -7,7 +7,7 @@ const features: Feature[] = [
   },
   {
     icon: 'fa-server',
-    description: 'Feature rich Node backend',
+    description: 'Database models, migrations and queries with TypeORM',
   },
   {
     icon: 'fa-wrench',
