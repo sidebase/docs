@@ -13,15 +13,16 @@ import Banner from "~/components/landing/Banner.vue";
     <div class="absolute top-[80vh] left-0 select-none">
       <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
-    <div class="absolute bottom-0 left-0 select-none">
-      <img class="w-[100vw] opacity-40" src="/glow-bottom.webp" />
+    <div class="absolute bottom-[-7vh] left-0 select-none">
+      <img class="w-[100vw] opacity-50" src="/glow-bottom.webp" />
     </div>
 
 
     <Banner
         badge-text="We are hiring!"
-        text="We just launched our beta of nuxt-auth!"
-        link="https://sidebase.io"
+        text="Are you interested in working on sidebase?"
+        link="https://sidestream.jobs.personio.de/"
+        link-text="See our open positions!"
     />
 
     <div class="Landing relative">

@@ -16,7 +16,7 @@ export default defineAppConfig({
         },
         aside: {
             level: 1,
-            exclude: ['/nuxt-auth', '/nuxt-session', '/nuxt-parse']
+            exclude: ['/nuxt-auth', '/nuxt-session', '/nuxt-parse', '/sidebase']
         },
         footer: {
             iconLinks: [
