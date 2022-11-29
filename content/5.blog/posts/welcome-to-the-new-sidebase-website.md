@@ -50,5 +50,3 @@ We also plan to publish our release notes, future ideas and much more, so be sur
 to never miss a new post!
 
 That is it for now! I hope you enjoy our new website and as always feel free to reach-out and share feedback or bugs with our team!
-
-### ~ Zoey and the entire sidebase team
