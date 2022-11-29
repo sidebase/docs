@@ -1,7 +1,7 @@
 context: default
 
 metadata:
-  org: "github.com/sidestream-tech/"
+  org: "github.com/sidebase/"
   maintainer: "DevOps"
   description: "Desired State File of the sidebase docs homepage deployment"
 
