@@ -2,6 +2,7 @@
 import ModulesSection from "../components/landing/ModulesSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
+import Banner from "~/components/landing/Banner.vue";
 </script>
 
 <template>
@@ -12,9 +13,18 @@ import FeaturesSection from "../components/landing/FeaturesSection";
     <div class="absolute top-[80vh] left-0 select-none">
       <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
-    <div class="absolute bottom-0 left-0 select-none">
-      <img class="w-[100vw] opacity-40" src="/glow-bottom.webp" />
+    <div class="absolute bottom-[-7vh] left-0 select-none">
+      <img class="w-[100vw] opacity-50" src="/glow-bottom.webp" />
     </div>
+
+
+    <Banner
+        badge-text="We are hiring!"
+        text="Are you interested in working on sidebase?"
+        link="https://sidestream.jobs.personio.de/"
+        link-text="See our open positions!"
+    />
+
     <div class="Landing relative">
       <article id="top-section">
         <slot />
@@ -25,7 +35,7 @@ import FeaturesSection from "../components/landing/FeaturesSection";
             What is <span class="GradientText">sidebase</span>?
           </h1>
           <p>
-            sidebase is a production ready Nuxt 3 starter template. Through the integration with our own modules, we ensure you can start developing quickly and efficiently.
+            sidebase is a production ready Nuxt 3 starter template. By hand picking battle tested modules and packages we provide a full-stack application base with amazing developer experience!
           </p>
         </div>
         <FeaturesSection />

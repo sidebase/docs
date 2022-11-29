@@ -6,42 +6,7 @@ import Feature from '~/components/landing/Feature.vue'
 <template>
   <section>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 place-content-stretch">
-      <Feature
-          :feature="features[0]"
-      />
-      <Feature
-          :feature="features[7]"
-      />
-      <Feature
-          :feature="features[10]"
-      />
-      <Feature
-          :feature="features[9]"
-      />
-      <Feature
-          :feature="features[3]"
-      />
-      <Feature
-          :feature="features[4]"
-      />
-      <Feature
-          :feature="features[1]"
-      />
-      <Feature
-          :feature="features[2]"
-      />
-      <Feature
-          :feature="features[8]"
-      />
-      <Feature
-          :feature="features[6]"
-      />
-      <Feature
-          :feature="features[11]"
-      />
-      <Feature
-          :feature="features[5]"
-      />
+      <Feature v-for="feature in features" :feature="feature" :key="feature.description" />
     </div>
   </section>
 </template>
