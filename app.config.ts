@@ -18,5 +18,14 @@ export default defineAppConfig({
             level: 1,
             exclude: ['/nuxt-auth', '/nuxt-session', '/nuxt-parse']
         },
+        footer: {
+            iconLinks: [
+                {
+                    label: 'Discord',
+                    href: 'https://discord.gg/VzABbVsqAc',
+                    icon: "ic:baseline-discord"
+                },
+            ],
+        },
     }
 })

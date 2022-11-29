@@ -2,6 +2,7 @@
 import ModulesSection from "../components/landing/ModulesSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
+import Banner from "~/components/landing/Banner.vue";
 </script>
 
 <template>
@@ -15,6 +16,14 @@ import FeaturesSection from "../components/landing/FeaturesSection";
     <div class="absolute bottom-0 left-0 select-none">
       <img class="w-[100vw] opacity-40" src="/glow-bottom.webp" />
     </div>
+
+
+    <Banner
+        badge-text="We are hiring!"
+        text="We just launched our beta of nuxt-auth!"
+        link="https://sidebase.io"
+    />
+
     <div class="Landing relative">
       <article id="top-section">
         <slot />
