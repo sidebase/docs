@@ -35,7 +35,7 @@ import Banner from "~/components/landing/Banner.vue";
             What is <span class="GradientText">sidebase</span>?
           </h1>
           <p>
-            sidebase is a production ready Nuxt 3 starter template. Through the integration with our own modules, we ensure you can start developing quickly and efficiently.
+            sidebase is a production ready Nuxt 3 starter template. By hand picking battle tested modules and packages we provide a full-stack application base with amazing developer experience!
           </p>
         </div>
         <FeaturesSection />
