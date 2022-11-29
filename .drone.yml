@@ -1,33 +1,4 @@
-kind: pipeline
-type: docker
-name: publish-sidebase-docs-on-pr-push
-
-trigger:
-  event:
-    - pull_request
-steps:
-- name: publish-sidebase-docs-on-pr-push
-  image: plugins/docker
-
-  settings:
-    repo: ghcr.io/sidebase/docs/sidebase-docs
-    tags:
-      - "pr-${DRONE_PULL_REQUEST}"
-    custom_labels:
-        - key: org.opencontainers.image.source
-          value: https://github.com/sidebase/docs
-    dockerfile: ./Dockerfile
-    context:  ./
-    cache_from:
-      - ghcr.io/sidebase/docs/sidebase-docs:main
-    registry:  https://ghcr.io
-    username:
-      from_secret: SIDECHART_USERNAME
-    password:
-      from_secret: GITHUB_PACKAGES_TOKEN
-
 ---
-
 kind: pipeline
 type: docker
 name: publish-sidebase-docs-on-merge-main
