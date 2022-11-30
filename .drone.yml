@@ -6,8 +6,8 @@ name: publish-sidebase-docs-on-merge-main
 trigger:
   event:
     - push
-  branch:
-    - main
+  # branch:
+  #   - main
   
 steps:
 - name: publish-sidebase-docs-on-merge-main
@@ -46,8 +46,8 @@ clone:
 trigger:
   event:
     - push
-  branch:
-    - main
+  # branch:
+  #   - main
 
 steps:
 - name: deploy
