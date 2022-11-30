@@ -27,6 +27,7 @@ apps:
     protected: false
     priority: -1
     wait: true
+    timeout: 500
     helmFlags: [
       "--atomic",
     ]
