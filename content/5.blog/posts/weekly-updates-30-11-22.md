@@ -6,7 +6,7 @@ image: /blog/weekly-talk-30-11-22/preview.png
 timestamp: 1669829161
 
 author: Zoey Kaiser
-position: Core team member and website maintainer
+position: Core team member
 avatar: https://avatars.githubusercontent.com/u/30908158?v=4
 avatarLink: https://twitter.com/zoey_kaiser
 
