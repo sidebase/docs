@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             plausible: {
-                domain: 'v2.sidebase.io',
+                domain: 'sidebase.io',
             },
         },
     },
