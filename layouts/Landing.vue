@@ -25,7 +25,7 @@ import Banner from "~/components/landing/Banner.vue";
         link-text="See our open positions!"
     />
 
-    <div class="Landing relative">
+    <div class="SidebaseContainer relative">
       <article id="top-section">
         <slot />
       </article>
@@ -67,13 +67,6 @@ import Banner from "~/components/landing/Banner.vue";
 </template>
 
 <style scoped>
-.Landing {
-  max-width: 80rem;
-  margin: auto auto 5rem;
-
-  @apply mx-10 lg:mx-auto;
-}
-
 .Heading {
   margin: 100px 0 50px 0;
 }
