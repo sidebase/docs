@@ -1,5 +1,5 @@
 <template>
-  <div class="modules">
+  <div class="modules flex items-center flex-wrap gap-5">
     <NuxtLink href="/nuxt-auth">
       <div class="card">
         <div class="box">
@@ -39,13 +39,6 @@
 </template>
 
 <style scoped>
-.modules {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .modules .card {
   position: relative;
   min-width: 366px;
@@ -54,11 +47,10 @@
   inset -5px -5px 15px rgba(255, 255, 255, 0.1),
   5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  margin-right: 50px;
   transition: 0.5s;
   cursor: pointer;
 
-  @apply my-5 min-w-[310px] lg:min-w-[366px] lg:my-0;
+  @apply my-5 min-w-[310px] lg:min-w-[366px] lg:my-0 mx-auto;
 }
 
 .modules .card:hover {

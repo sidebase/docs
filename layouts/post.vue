@@ -9,8 +9,8 @@ const { page } = useContent()
     <div class="absolute -top-[30vh] left-0 select-none">
       <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
-    <div class="Post relative">
-      <header class="flex items-center justify-between mb-4 lg:mb-6 not-format">
+    <div class="SidebaseContainer relative">
+      <header class="flex items-center justify-between mb-4 lg:mb-6 not-format mt-5">
         <div class="w-full">
           <div class="mb-4">
             <h1 class="text-3xl font-extrabold leading-tight lg:mb-6 lg:text-4xl text-gray-900 dark:text-white">
@@ -41,7 +41,7 @@ const { page } = useContent()
       </header>
       <hr class="dark:border-gray-800 mb-4" />
       <div class="flex items-center justify-between">
-        <div>
+        <div class="flex-grow">
           <AnnouncementButton label="Back to overview" icon="heroicons-solid:arrow-left" to="/blog" />
         </div>
         <div class="flex items-center space-x-3">
@@ -58,12 +58,3 @@ const { page } = useContent()
     </div>
   </div>
 </template>
-
-<style scoped>
-.Post {
-  max-width: 80rem;
-  margin: auto auto 5rem;
-
-  @apply mx-10 lg:mx-auto mt-10;
-}
-</style>
