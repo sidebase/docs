@@ -15,7 +15,7 @@ defineProps({
   <NuxtLink :href="post._path" v-if="post.published">
     <div class="BlogCard overflow-hidden">
       <div class="h-[180px] overflow-hidden">
-        <img :src="post.image" class="relative -z-10 min-h-[180px] w-full" alt="Blog Post Preview" />
+        <img :src="post.image" class="relative min-h-[180px] w-full" alt="Blog Post Preview" />
       </div>
       <div class="py-5 px-6 dark:text-gray-300">
         <h3 class="text-2xl font-bold h-[70px]">

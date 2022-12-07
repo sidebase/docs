@@ -7,7 +7,7 @@ const contentQuery = await queryContent('blog/posts').sort(
 </script>
 
 <template>
-  <div class="relative min-h-[94vh]">
+  <div class="relative min-h-[89vh]">
     <div class="absolute top-0 left-0 select-none">
       <img class="w-[100vw] opacity-20 dark:opacity-50 rotate-180" src="/glow-bottom.webp" />
     </div>
