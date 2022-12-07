@@ -13,10 +13,9 @@ import Banner from "~/components/landing/Banner.vue";
     <div class="absolute top-[80vh] left-0 select-none">
       <img class="w-[100vw]" src="/purple-blur.webp" />
     </div>
-    <div class="absolute bottom-[-7vh] left-0 select-none">
+    <div class="absolute bottom-[-7.4vh] left-0 select-none">
       <img class="w-[100vw] opacity-50" src="/glow-bottom.webp" />
     </div>
-
 
     <Banner
         badge-text="We are hiring!"
@@ -51,7 +50,7 @@ import Banner from "~/components/landing/Banner.vue";
         </div>
         <ModulesSection />
       </section>
-      <section class="py-6">
+      <section class="pt-6">
         <div class="Heading">
           <h1>
             What do others think of <span class="GradientText">sidebase</span>?
