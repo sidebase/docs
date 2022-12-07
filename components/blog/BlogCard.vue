@@ -12,11 +12,11 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :href="post._path" class="group rounded-lg overflow-hidden shadow-lg bg-gray-900 cursor-pointer" v-if="post.published">
+  <NuxtLink :href="post._path" class="group rounded-xl overflow-hidden shadow-lg bg-gray-900 cursor-pointer" v-if="post.published">
     <div class="relative">
       <img class="w-full" :src="post.image"/>
       <div
-          class="group-hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-black/30"></div>
+          class="group-hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-black/40"></div>
       <div class="absolute bottom-0 left-0 bg-gray-900 px-2 py-1.5 text-white text-sm rounded-tr">
         <div class="flex w-full items-center space-x-3">
           <img
