@@ -42,7 +42,7 @@ import Banner from "~/components/landing/Banner.vue";
       <section class="py-6">
         <div class="Heading">
           <h1>
-            Our amazing <span class="GradientText">modules</span>!
+            Our amazing <span class="GradientTextPurple">modules</span>!
           </h1>
           <p>
             Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt 3 modules.
@@ -96,5 +96,23 @@ import Banner from "~/components/landing/Banner.vue";
       background-position: 200% center;
     }
   }
+}
+
+.GradientTextPurple {
+  background: linear-gradient(to right, #81F6D4 10%, #8136d4 40%, #9881e6 60%, #81F6D4 90%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 1s linear infinite;
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
 }
 </style>
