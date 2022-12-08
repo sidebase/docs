@@ -5,8 +5,8 @@ description: We just released our new homepage. In this post you learn about the
 image: /blog/welcome-blog/preview.png
 timestamp: 1669675069
 
-author: Zoey Kaiser
-position: Core team member and website maintainer
+author: Zoey
+position: Core team member
 avatar: https://avatars.githubusercontent.com/u/30908158?v=4
 avatarLink: https://twitter.com/zoey_kaiser
 

@@ -5,7 +5,7 @@ description: In our weekly calls we discuss updates to sidebase. These are the n
 image: /blog/weekly-talk-30-11-22/preview.png
 timestamp: 1669829161
 
-author: Zoey Kaiser
+author: Zoey
 position: Core team member
 avatar: https://avatars.githubusercontent.com/u/30908158?v=4
 avatarLink: https://twitter.com/zoey_kaiser
