@@ -39,7 +39,7 @@ const features: Feature[] = [
   },
   {
     icon: 'fa-gear',
-    description: 'CSS utiltities via TailwindCSS',
+    description: 'CSS utilities via TailwindCSS',
   },
   {
     icon: 'fa-pen-fancy',

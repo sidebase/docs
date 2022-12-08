@@ -12,6 +12,6 @@ nav {
   max-width: 77rem;
   margin: auto auto 5rem;
 
-  @apply mx-10 xl:mx-auto;
+  @apply px-12 xl:px-0;
 }
 </style>

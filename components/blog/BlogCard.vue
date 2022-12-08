@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+import type {PropType} from 'vue'
 import {ParsedContent} from "@nuxt/content/dist/runtime/types";
 import FormatDate from "~/components/common/FormatDate.vue";
 
@@ -12,64 +12,36 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :href="post._path" v-if="post.published">
-    <div class="BlogCard overflow-hidden">
-      <div class="h-[180px] overflow-hidden">
-        <img :src="post.image" class="min-h-[180px] w-full" alt="Blog Post Preview" />
-      </div>
-      <div class="py-5 px-6 dark:text-gray-300">
-        <h3 class="text-2xl font-bold">
-          {{post.title}}
-        </h3>
-        <p class="mt-2">
-          {{post.description}}
-        </p>
-
-        <div class="flex w-full items-center space-x-3 mt-10">
+  <NuxtLink :href="post._path" class="group rounded-xl overflow-hidden shadow-lg bg-gray-900 cursor-pointer" v-if="post.published">
+    <div class="relative">
+      <img class="w-full" :src="post.image"/>
+      <div
+          class="group-hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-black/40"></div>
+      <div class="absolute bottom-0 left-0 bg-gray-900 px-2 py-1.5 text-white text-sm rounded-tr">
+        <div class="flex w-full items-center space-x-3">
           <img
               :src="post.avatar"
-              class="ring-sidebase-green-800 h-8 w-8 rounded-full p-1 ring-2"
+              class="h-8 w-8 rounded-full"
               alt="Bordered avatar"
           >
           <h1 class="w-full">
             {{ post.author }}
           </h1>
-          <div>
-            <FormatDate :date="new Date(post.timestamp * 1000)" />
-          </div>
         </div>
       </div>
     </div>
+    <div class="px-6 py-4">
+      <h1 class="font-semibold text-lg inline-block">
+        {{ post.title }}
+      </h1>
+      <p class="text-gray-300 text-sm mt-1">
+        {{ post.description }}
+      </p>
+    </div>
+    <div class="px-6 pb-4 flex flex-row items-center">
+    <span class="py-1 text-sm font-regular text-gray-600 mr-1 flex flex-row items-center">
+        <FormatDate :date="new Date(post.timestamp * 1000)"/>
+    </span>
+    </div>
   </NuxtLink>
 </template>
-
-<style scoped>
-.BlogCard {
-  position: relative;
-  min-width: 366px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0),
-  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  transition: 0.5s;
-  cursor: pointer;
-
-  @apply my-5 min-w-[310px] lg:min-w-[366px] lg:my-0;
-}
-
-.BlogCard:hover {
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0),
-  inset -5px -5px 15px rgba(255, 255, 255, 0.3),
-  5px 5px 15px rgba(0, 0, 0, 0.8), -5px -5px 15px rgba(255, 255, 255, 0.4);
-}
-
-@media (prefers-color-scheme: dark) {
-  .BlogCard .box .content h3 {
-    color: #fff;
-  }
-
-  .BlogCard .box .content p {
-    color: rgba(255, 255, 255, 0.9);
-  }
-}
-</style>

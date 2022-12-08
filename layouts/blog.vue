@@ -7,7 +7,7 @@ const contentQuery = await queryContent('blog/posts').sort(
 </script>
 
 <template>
-  <div class="relative min-h-[94vh]">
+  <div class="relative min-h-[89vh]">
     <div class="absolute top-0 left-0 select-none">
       <img class="w-[100vw] opacity-20 dark:opacity-50 rotate-180" src="/glow-bottom.webp" />
     </div>
@@ -23,7 +23,7 @@ const contentQuery = await queryContent('blog/posts').sort(
             </p>
           </div>
         </div>
-        <div class="grid md:gap-8 md:grid-cols-2 xl:grid-cols-3 mx-4 pb-12">
+        <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3 mx-4 pb-12">
           <BlogCard v-for="post in contentQuery" :post="post" :key="post._id"/>
         </div>
       </div>
