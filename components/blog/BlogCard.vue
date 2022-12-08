@@ -12,25 +12,13 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :href="post._path" class="group rounded-xl overflow-hidden shadow-lg bg-gray-900 cursor-pointer" v-if="post.published">
+  <NuxtLink :href="post._path" class="flex flex-col h-full group rounded-xl overflow-hidden shadow-lg bg-gray-900/60 cursor-pointer" v-if="post.published">
     <div class="relative">
       <img class="w-full" :src="post.image"/>
       <div
           class="group-hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-black/40"></div>
-      <div class="absolute bottom-0 left-0 bg-gray-900 px-2 py-1.5 text-white text-sm rounded-tr">
-        <div class="flex w-full items-center space-x-3">
-          <img
-              :src="post.avatar"
-              class="h-8 w-8 rounded-full"
-              alt="Bordered avatar"
-          >
-          <h1 class="w-full">
-            {{ post.author }}
-          </h1>
-        </div>
-      </div>
     </div>
-    <div class="px-6 py-4">
+    <div class="px-6 py-4 flex-grow">
       <h1 class="font-semibold text-lg inline-block">
         {{ post.title }}
       </h1>
@@ -39,9 +27,19 @@ defineProps({
       </p>
     </div>
     <div class="px-6 pb-4 flex flex-row items-center">
-    <span class="py-1 text-sm font-regular text-gray-600 mr-1 flex flex-row items-center">
-        <FormatDate :date="new Date(post.timestamp * 1000)"/>
-    </span>
+      <div class="flex w-full items-center space-x-3">
+        <img
+            :src="post.avatar"
+            class="h-8 w-8 rounded-full"
+            alt="Bordered avatar"
+        >
+        <h1 class="w-full">
+          {{ post.author }}
+        </h1>
+      </div>
+      <span class="py-1 text-sm font-regular text-gray-600 mr-1 flex flex-row items-center">
+          <FormatDate :date="new Date(post.timestamp * 1000)"/>
+      </span>
     </div>
   </NuxtLink>
 </template>
