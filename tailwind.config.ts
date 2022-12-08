@@ -1,10 +1,13 @@
 import type { Config } from 'tailwindcss'
+import {primary, secondary} from './design.config'
 
 export default <Config> {
   content: ['./layouts/**/*.vue', './components/**/*.vue'],
   theme: {
     extend: {
       colors: {
+        primary,
+        secondary,
         'sidebase-green': {
           DEFAULT: '#5BF3C7',
           50: '#FFFFFF',
