@@ -81,7 +81,7 @@ import Banner from "~/components/landing/Banner.vue";
 }
 
 .GradientText {
-  background: linear-gradient(to right, #81F6D4 10%, #12a87b 40%, #0FCF97 60%, #81F6D4 90%);
+  background: linear-gradient(to right, #7bceb6 10%, #12a87b 40%, #0FCF97 60%, #7bceb6 90%);
   background-size: 200% auto;
 
   color: #000;
@@ -99,7 +99,7 @@ import Banner from "~/components/landing/Banner.vue";
 }
 
 .GradientTextPurple {
-  background: linear-gradient(to right, #81F6D4 10%, #8136d4 40%, #9881e6 60%, #81F6D4 90%);
+  background: linear-gradient(to right, #95b4ab 10%, #8136d4 40%, #9881e6 60%, #95b4ab 90%);
   background-size: 200% auto;
 
   color: #000;
