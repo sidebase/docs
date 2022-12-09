@@ -1,0 +1,3 @@
+---
+redirect: /sidebase/getting-started
+---
