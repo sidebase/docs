@@ -12,17 +12,17 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :href="post._path" class="flex flex-col h-full group rounded-xl overflow-hidden shadow-lg bg-gray-900/60 cursor-pointer" v-if="post.published">
+  <NuxtLink :href="post._path" class="flex flex-col h-full group rounded-xl overflow-hidden shadow-lg dark:bg-gray-900/60 cursor-pointer" v-if="post.published">
     <div class="relative">
       <img class="w-full" :src="post.image"/>
       <div
-          class="group-hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-black/40"></div>
+          class="group-hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 dark:bg-black/40"></div>
     </div>
     <div class="px-6 py-4 flex-grow">
-      <h1 class="font-semibold text-lg inline-block">
+      <h1 class="font-semibold text-lg inline-block text-black dark:text-white font-bold">
         {{ post.title }}
       </h1>
-      <p class="text-gray-300 text-sm mt-1">
+      <p class="dark:text-gray-300 text-sm mt-1">
         {{ post.description }}
       </p>
     </div>
