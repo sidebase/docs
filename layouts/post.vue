@@ -7,7 +7,7 @@ const { page } = useContent()
 <template>
   <div class="relative min-h-[91vh] overflow-hidden">
     <div class="absolute -top-[30vh] left-0 select-none">
-      <img class="w-[100vw]" src="/purple-blur.webp" />
+      <NuxtImg class="w-[100vw]" src="/purple-blur.webp" alt="Background Image" />
     </div>
     <div class="relative HeaderContainer">
       <NuxtLink href="/blog" class="flex items-center gap-1 my-6">
@@ -54,13 +54,14 @@ const { page } = useContent()
 
 <style scoped>
 .HeaderContainer {
-  max-width: 77rem;
+  max-width: 87rem;
   margin: auto auto;
 
   @apply px-12 xl:px-0;
 }
+
 .PostContainer {
-  max-width: 55rem;
+  max-width: 58rem;
   margin: auto auto 5rem;
 
   @apply px-12 xl:px-0;

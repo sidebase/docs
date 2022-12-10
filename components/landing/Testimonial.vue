@@ -29,12 +29,12 @@ defineProps({
                 {{ testimonial.position }}
               </span>
             </h1>
-            <div class="mt-1 flex items-center space-x-2 text-gray-700 hover:text-sidebase-green-900 dark:text-white dark:hover:text-sidebase-green">
+            <div class="flex items-center space-x-2 text-gray-700 hover:text-sidebase-green-900 dark:text-white dark:hover:text-sidebase-green">
               <a v-if="testimonial.githubLink" :href="testimonial.githubLink" target="_blank">
-                <i class="fa-brands fa-github" />
+                <Icon name="uil:github" size="18" />
               </a>
               <a v-if="testimonial.twitterLink" :href="testimonial.twitterLink" target="_blank">
-                <i class="fa-brands fa-twitter" />
+                <Icon name="uil:twitter" size="18" />
               </a>
             </div>
           </div>

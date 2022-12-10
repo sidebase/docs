@@ -4,7 +4,7 @@ import Testimonial from '~/components/landing/Testimonial.vue'
 </script>
 
 <template>
-  <div class="mx-auto max-w-screen-xl py-8 px-4 lg:p-0">
+  <div class="SidebaseContainer mx-auto py-8 px-4 lg:p-0">
     <div class="TestimonialsGrid lg:grid">
       <div>
         <Testimonial
