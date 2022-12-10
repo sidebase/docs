@@ -13,7 +13,7 @@ defineProps({
   <div class="card px-5 py-6 h-full flex items-center">
     <div class="flex items-center space-x-3">
       <div class="icon flex h-14 w-14 flex-none items-center justify-center rounded-full">
-        <i class="fa text-xl dark:text-white" :class="feature.icon" />
+        <Icon :name="feature.icon" size="20" />
       </div>
       <p class="text-sidebase-green-900 dark:text-sidebase-green-400 text-lg">
         {{ feature.description }}

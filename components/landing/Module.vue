@@ -13,7 +13,7 @@ defineProps({
       <div class="-mt-6">
         <div>
           <span class="inline-flex items-center justify-center rounded-xl bg-purple-400 dark:bg-purple-900 p-4 shadow-lg">
-            <i class="fa text-2xl text-white" :class="icon" />
+            <Icon :name="icon" size="25" />
           </span>
         </div>
         <h3 class="mt-8 text-xl font-semibold leading-8 tracking-tight dark:text-gray-100">{{ name }}</h3>

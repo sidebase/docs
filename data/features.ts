@@ -2,51 +2,51 @@ import type { Feature } from '~/types'
 
 const features: Feature[] = [
   {
-    icon: 'fa-object-ungroup',
+    icon: 'heroicons-solid:bolt',
     description: 'Nuxt 3 with Vue 3 as the frontend',
   },
   {
-    icon: 'fa-server',
+    icon: 'heroicons-solid:circle-stack',
     description: 'Database models, migrations and queries with Prisma',
   },
   {
-    icon: 'fa-wrench',
+    icon: 'heroicons-solid:document-check',
     description: 'Strong data-validation using zod',
   },
   {
-    icon: 'fa-rotate',
+    icon: 'heroicons-solid:cursor-arrow-ripple',
     description: 'Integration with sidebase Nuxt 3 modules',
   },
   {
-    icon: 'fa-database',
+    icon: 'heroicons-solid:command-line',
     description: 'In-memory development SQL-database via sqlite3',
   },
   {
-    icon: 'fa-spell-check',
+    icon: 'heroicons-solid:adjustments-vertical',
     description: 'Code testing via vitest, test-library/vue and supertest',
   },
   {
-    icon: 'fa-outdent',
+    icon: 'heroicons-solid:check-badge',
     description: 'Linting through eslint',
   },
   {
-    icon: 'fa-gauge',
+    icon: 'heroicons-solid:eye',
     description: 'Code coverage via C8',
   },
   {
-    icon: 'fa-rocket',
+    icon: 'heroicons-solid:server-stack',
     description: 'Ready to deploy with docker',
   },
   {
-    icon: 'fa-gear',
+    icon: 'heroicons-solid:swatch',
     description: 'CSS utilities via TailwindCSS',
   },
   {
-    icon: 'fa-pen-fancy',
+    icon: 'heroicons-solid:archive-box',
     description: 'CSS components via Ant Design Vue',
   },
   {
-    icon: 'fa-clipboard-check',
+    icon: 'heroicons-solid:cog-6-tooth',
     description: 'Type checking in script and template via Volar / vue-tsc',
   },
 ]
