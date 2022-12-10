@@ -10,12 +10,6 @@ import Banner from "~/components/landing/Banner.vue";
     <div class="absolute top-0 right-0 select-none">
       <NuxtImg src="/green-blur.png" alt="Background Image" />
     </div>
-    <div class="absolute top-[80vh] left-0 select-none">
-      <NuxtImg class="w-[100vw] hidden dark:block" src="/purple-blur.webp" alt="Background Image" />
-    </div>
-    <div class="absolute bottom-[-6.9vh] left-0 select-none">
-      <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
-    </div>
 
     <Banner
         badge-text="We are hiring!"
@@ -24,43 +18,60 @@ import Banner from "~/components/landing/Banner.vue";
         link-text="See our open positions!"
     />
 
-    <div class="SidebaseContainer relative">
-      <article id="top-section">
+    <div class="relative">
+      <article class="SidebaseContainer" id="top-section">
         <slot />
       </article>
       <section class="pb-6">
-        <div class="Heading">
-          <h1>
-            What is <span class="GradientText">sidebase</span>?
-          </h1>
-          <p>
-            sidebase is a production ready Nuxt 3 starter template. By hand picking battle tested modules and packages we provide a full-stack application base with amazing developer experience!
-          </p>
+        <div class="SidebaseContainer">
+          <div class="Heading">
+            <h1>
+              What is <span class="GradientText">sidebase</span>?
+            </h1>
+            <p>
+              sidebase is a production ready Nuxt 3 starter template. By hand picking battle tested modules and packages we provide a full-stack application base with amazing developer experience!
+            </p>
+          </div>
+          <FeaturesSection />
         </div>
-        <FeaturesSection />
       </section>
-      <section class="py-6">
-        <div class="Heading">
-          <h1>
-            Our amazing <span class="GradientTextPurple">modules</span>!
-          </h1>
-          <p>
-            Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt 3 modules.
-          </p>
+      <section class="relative py-6">
+        <div class="absolute xl:top-[-300px] 2xl:top-[-500px] left-0 select-none">
+          <NuxtImg class="w-[100vw] hidden dark:block" src="/purple-blur.webp" alt="Background Image" />
         </div>
-        <ModulesSection />
-      </section>
-      <section class="pt-6">
-        <div class="Heading">
-          <h1>
-            What do others think of <span class="GradientText">sidebase</span>?
-          </h1>
-          <p>
-            The opinions of the community matter a lot to us! Have a look at what other developers have said about sidebase.
-          </p>
+        <div class="relative SidebaseContainer">
+          <div class="Heading">
+            <h1>
+              Our amazing <span class="GradientTextPurple">modules</span>!
+            </h1>
+            <p>
+              Together with our main starter, we focus on developing high quality, developer experienced oriented Nuxt 3 modules.
+            </p>
+          </div>
+          <ModulesSection />
         </div>
-        <TestimonialsSection />
       </section>
+      <section class="relative pt-6">
+        <div class="absolute bottom-[-6.9vh] left-0 select-none">
+          <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
+        </div>
+        <div class="relative SidebaseContainer">
+          <div class="Heading">
+            <h1>
+              What do others think of <span class="GradientText">sidebase</span>?
+            </h1>
+            <p>
+              The opinions of the community matter a lot to us! Have a look at what other developers have said about sidebase.
+            </p>
+          </div>
+          <TestimonialsSection />
+        </div>
+      </section>
+      <Banner
+          text="Are you interested in enterprise solutions?"
+          link="https://www.sidestream.tech/en/contact"
+          link-text="Contact us here!"
+      />
     </div>
   </div>
 </template>
