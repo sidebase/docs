@@ -8,13 +8,13 @@ import Banner from "~/components/landing/Banner.vue";
 <template>
   <div class="relative">
     <div class="absolute top-0 right-0 select-none">
-      <NuxtImg src="/green-blur.png" />
+      <NuxtImg src="/green-blur.png" alt="Background Image" />
     </div>
     <div class="absolute top-[80vh] left-0 select-none">
-      <NuxtImg class="w-[100vw] hidden dark:block" src="/purple-blur.webp" />
+      <NuxtImg class="w-[100vw] hidden dark:block" src="/purple-blur.webp" alt="Background Image" />
     </div>
     <div class="absolute bottom-[-6.9vh] left-0 select-none">
-      <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" />
+      <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
     </div>
 
     <Banner

@@ -9,7 +9,7 @@ const contentQuery = await queryContent('blog/posts').sort(
 <template>
   <div class="relative min-h-[89vh]">
     <div class="absolute top-0 left-0 select-none">
-      <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50 rotate-180" src="/glow-bottom.webp" />
+      <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50 rotate-180" src="/glow-bottom.webp" alt="Background Image" />
     </div>
     <section class="BlogContainer relative">
       <div class="pt-12">
