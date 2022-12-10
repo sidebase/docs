@@ -7,7 +7,7 @@ const { page } = useContent()
 <template>
   <div class="relative min-h-[91vh] overflow-hidden">
     <div class="absolute -top-[30vh] left-0 select-none">
-      <img class="w-[100vw]" src="/purple-blur.webp" />
+      <NuxtImg class="w-[100vw]" src="/purple-blur.webp" />
     </div>
     <div class="relative HeaderContainer">
       <NuxtLink href="/blog" class="flex items-center gap-1 my-6">
