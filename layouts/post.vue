@@ -54,11 +54,12 @@ const { page } = useContent()
 
 <style scoped>
 .HeaderContainer {
-  max-width: 77rem;
+  max-width: 87rem;
   margin: auto auto;
 
   @apply px-12 xl:px-0;
 }
+
 .PostContainer {
   max-width: 55rem;
   margin: auto auto 5rem;
