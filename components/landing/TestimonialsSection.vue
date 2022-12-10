@@ -4,41 +4,39 @@ import Testimonial from '~/components/landing/Testimonial.vue'
 </script>
 
 <template>
-  <div class="SidebaseContainer mx-auto py-8 px-4 lg:p-0">
-    <div class="TestimonialsGrid lg:grid">
-      <div>
-        <Testimonial
-            :testimonial="testimonials[0]"
-        />
-        <Testimonial
-            :testimonial="testimonials[3]"
-        />
-        <Testimonial
-            :testimonial="testimonials[7]"
-        />
-      </div>
-      <div>
-        <Testimonial
-            :testimonial="testimonials[1]"
-        />
-        <Testimonial
-            :testimonial="testimonials[4]"
-        />
-        <Testimonial
-            :testimonial="testimonials[8]"
-        />
-      </div>
-      <div>
-        <Testimonial
-            :testimonial="testimonials[2]"
-        />
-        <Testimonial
-            :testimonial="testimonials[5]"
-        />
-        <Testimonial
-            :testimonial="testimonials[6]"
-        />
-      </div>
+  <div class="TestimonialsGrid lg:grid">
+    <div>
+      <Testimonial
+          :testimonial="testimonials[0]"
+      />
+      <Testimonial
+          :testimonial="testimonials[3]"
+      />
+      <Testimonial
+          :testimonial="testimonials[7]"
+      />
+    </div>
+    <div>
+      <Testimonial
+          :testimonial="testimonials[1]"
+      />
+      <Testimonial
+          :testimonial="testimonials[4]"
+      />
+      <Testimonial
+          :testimonial="testimonials[8]"
+      />
+    </div>
+    <div>
+      <Testimonial
+          :testimonial="testimonials[2]"
+      />
+      <Testimonial
+          :testimonial="testimonials[5]"
+      />
+      <Testimonial
+          :testimonial="testimonials[6]"
+      />
     </div>
   </div>
 </template>
@@ -46,7 +44,7 @@ import Testimonial from '~/components/landing/Testimonial.vue'
 <style scoped>
 .TestimonialsGrid {
   gap: 2rem;
-  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .GradientText {
@@ -62,10 +60,12 @@ import Testimonial from '~/components/landing/Testimonial.vue'
   -webkit-text-fill-color: transparent;
 
   animation: shine 1s linear infinite;
+
 @keyframes shine {
   to {
     background-position: 200% center;
   }
 }
+
 }
 </style>
