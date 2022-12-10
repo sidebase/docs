@@ -13,7 +13,7 @@ import Banner from "~/components/landing/Banner.vue";
     <div class="absolute top-[80vh] left-0 select-none">
       <img class="w-[100vw] hidden dark:block" src="/purple-blur.webp" />
     </div>
-    <div class="absolute bottom-[-7.4vh] left-0 select-none">
+    <div class="absolute bottom-[-6.9vh] left-0 select-none">
       <img class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" />
     </div>
 
@@ -109,10 +109,10 @@ import Banner from "~/components/landing/Banner.vue";
   -webkit-text-fill-color: transparent;
 
   animation: shine 1s linear infinite;
-@keyframes shine {
-  to {
-    background-position: 200% center;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
   }
-}
 }
 </style>
