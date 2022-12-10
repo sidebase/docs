@@ -61,7 +61,7 @@ const { page } = useContent()
 }
 
 .PostContainer {
-  max-width: 55rem;
+  max-width: 58rem;
   margin: auto auto 5rem;
 
   @apply px-12 xl:px-0;
