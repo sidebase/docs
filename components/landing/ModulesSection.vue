@@ -3,7 +3,7 @@ import Module from "./Module.vue";
 </script>
 
 <template>
-  <div class="grid xl:grid-cols-3 gap-10">
+  <div class="grid xl:grid-cols-4 gap-10">
     <Module
       name="nuxt-auth"
       icon="heroicons-solid:lock-closed"
@@ -15,6 +15,12 @@ import Module from "./Module.vue";
         icon="heroicons-solid:squares-plus"
         link="/nuxt-session"
         description="Nuxt session middleware to get a persistent session per app user, e.g., to store data across multiple requests."
+    />
+    <Module
+        name="nuxt-prisma"
+        icon="heroicons-solid:circle-stack"
+        link="/nuxt-prisma/getting-started"
+        description="Open source Nuxt 3 layer that provides an Prisma ORM integration for Nuxt 3 applications. "
     />
     <Module
         name="nuxt-parse"
