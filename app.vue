@@ -21,7 +21,7 @@ nav {
   max-width: 90rem;
   margin: auto auto 5rem;
 
-  @apply px-12 xl:px-0;
+  @apply px-12 2xl:px-0;
 }
 
 .BrandingText {
