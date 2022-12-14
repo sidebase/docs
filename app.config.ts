@@ -19,6 +19,11 @@ export default defineAppConfig({
             exclude: ['/nuxt-auth', '/nuxt-session', '/nuxt-parse', '/sidebase', '/nuxt-prisma']
         },
         footer: {
+            credits: {
+                icon: '',
+                text: 'Imprint',
+                href: 'https://www.sidestream.tech/en/imprint',
+            },
             iconLinks: [
                 {
                     label: 'Discord',
