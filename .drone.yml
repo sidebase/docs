@@ -64,12 +64,9 @@ steps:
       from_secret: "SIDECHART_USERNAME"
     GITHUB_PACKAGES_TOKEN:
       from_secret: "GITHUB_PACKAGES_TOKEN"
-    ALGOLIA_APP_ID:
-      from_secret: "ALGOLIA_APP_ID"
-    ALGOLIA_API_KEY:
-      from_secret: "ALGOLIA_API_KEY"
   commands:
     - cd kubernetes/helm
+    - chamber export sidebase/docs/dev --format dotenv
     - aws eks update-kubeconfig --name eks-cluster-sidestream
     - helmsman --apply --debug -f helmsman.yml
 
