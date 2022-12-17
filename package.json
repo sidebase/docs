@@ -13,5 +13,8 @@
     "@nuxtjs/tailwindcss": "^6.1.3",
     "nuxt": "^3.0.0",
     "nuxt-plausible": "^0.1.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

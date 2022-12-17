@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
   modules: ['@nuxtjs/tailwindcss', 'nuxt-plausible'],
+  css: ["aos/dist/aos.css"],
   runtimeConfig: {
     public: {
       plausible: {
