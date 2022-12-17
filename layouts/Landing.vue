@@ -3,6 +3,11 @@ import ModulesSection from "../components/landing/ModulesSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
 import Banner from "~/components/landing/Banner.vue";
+import AOS from "aos";
+
+onMounted(() => {
+  AOS.init()
+})
 </script>
 
 <template>
@@ -21,6 +26,29 @@ import Banner from "~/components/landing/Banner.vue";
     <div class="relative">
       <article class="SidebaseContainer" id="top-section">
         <slot />
+        <!--
+        <div class="col-span-2 tracking-tighter">
+          <AnnouncementButton label="Version 0.3.0 of nuxt-auth is now out of Alpha!" to="https://github.com/sidebase/nuxt-auth/releases/tag/0.3.0" />
+          <BrandingText class="font-bold" />
+          <h2 class="text-6xl font-bold text-gray-100">
+            The productive Nuxt 3 starter for fullstack app development!
+          </h2>
+          <p class="text-gray-400 text-lg mt-4 tracking-normal">
+            sidebase is a modern, best-practice, batteries-included fullstack-app starter based on Nuxt 3 and TypeScript.
+          </p>
+          <div class="flex items-center space-x-6 mt-10">
+            <ButtonLink class="tracking-normal font-bold">
+              Get started →
+            </ButtonLink>
+            <a href="https://github.com/sidebase/sidebase" target="_blank" class="text-gray-400 font-bold hover:text-gray-200">
+              Star on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <Terminal content="npx nuxi@latest init -t community/sidebase" />
+        </div>
+        -->
       </article>
       <section class="pb-6">
         <div class="SidebaseContainer">
@@ -35,7 +63,7 @@ import Banner from "~/components/landing/Banner.vue";
           <FeaturesSection />
         </div>
       </section>
-      <section class="relative py-6">
+      <section class="relative py-6" data-aos="fade-up">
         <div class="absolute xl:top-[-300px] 2xl:top-[-500px] left-0 select-none">
           <NuxtImg class="w-[100vw] hidden dark:block" src="/purple-blur.webp" alt="Background Image" />
         </div>
@@ -51,7 +79,7 @@ import Banner from "~/components/landing/Banner.vue";
           <ModulesSection />
         </div>
       </section>
-      <section class="relative pt-6">
+      <section class="relative pt-6" data-aos="zoom-up">
         <div class="absolute bottom-[-6.9vh] left-0 select-none">
           <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
         </div>

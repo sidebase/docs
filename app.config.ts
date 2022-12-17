@@ -12,7 +12,6 @@ export default defineAppConfig({
             title: 'sidebase',
             logo: true,
             showLinkIcon: true,
-            exclude: ['/blog']
         },
         aside: {
             level: 1,
