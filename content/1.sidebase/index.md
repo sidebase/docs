@@ -1,4 +1,4 @@
 ---
 navigation: false
-redirect: /sidebase/getting-started
+redirect: /sidebase/welcome
 ---

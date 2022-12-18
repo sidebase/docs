@@ -26,29 +26,6 @@ onMounted(() => {
     <div class="relative">
       <article class="SidebaseContainer" id="top-section">
         <slot />
-        <!--
-        <div class="col-span-2 tracking-tighter">
-          <AnnouncementButton label="Version 0.3.0 of nuxt-auth is now out of Alpha!" to="https://github.com/sidebase/nuxt-auth/releases/tag/0.3.0" />
-          <BrandingText class="font-bold" />
-          <h2 class="text-6xl font-bold text-gray-100">
-            The productive Nuxt 3 starter for fullstack app development!
-          </h2>
-          <p class="text-gray-400 text-lg mt-4 tracking-normal">
-            sidebase is a modern, best-practice, batteries-included fullstack-app starter based on Nuxt 3 and TypeScript.
-          </p>
-          <div class="flex items-center space-x-6 mt-10">
-            <ButtonLink class="tracking-normal font-bold">
-              Get started →
-            </ButtonLink>
-            <a href="https://github.com/sidebase/sidebase" target="_blank" class="text-gray-400 font-bold hover:text-gray-200">
-              Star on GitHub
-            </a>
-          </div>
-        </div>
-        <div class="col-span-1">
-          <Terminal content="npx nuxi@latest init -t community/sidebase" />
-        </div>
-        -->
       </article>
       <section class="pb-6">
         <div class="SidebaseContainer">
@@ -57,7 +34,7 @@ onMounted(() => {
               What is <span class="GradientText">sidebase</span>?
             </h1>
             <p>
-              sidebase is a production ready Nuxt 3 starter template. By hand picking battle tested modules and packages we provide a full-stack application base with amazing developer experience!
+              sidebase is a web development kit to build production ready fullstack Nuxt 3 apps quickly. By hand picking battle tested modules and packages we provide a full-stack application base with amazing developer- and user-experience!
             </p>
           </div>
           <FeaturesSection />
