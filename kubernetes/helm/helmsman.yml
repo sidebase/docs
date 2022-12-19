@@ -35,3 +35,5 @@ apps:
       "commitShortSHA": "$DRONE_COMMIT_SHA"
       "image.tag": "$DRONE_COMMIT_SHA"
       "imageCredentials.password": "$GITHUB_PACKAGES_TOKEN"
+      "secrets.data.algolia_app_id": "$ALGOLIA_APP_ID"
+      "secrets.data.algolia_api_key": "$ALGOLIA_API_KEY"

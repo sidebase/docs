@@ -6,8 +6,8 @@ name: publish-sidebase-docs-on-merge-main
 trigger:
   event:
     - push
-  branch:
-    - main
+  # branch:
+  #   - main
 
 steps:
 - name: publish-sidebase-docs-on-merge-main
@@ -46,8 +46,8 @@ clone:
 trigger:
   event:
     - push
-  branch:
-    - main
+  # branch:
+  #   - main
 
 steps:
 - name: deploy
@@ -66,7 +66,7 @@ steps:
       from_secret: "GITHUB_PACKAGES_TOKEN"
   commands:
     - cd kubernetes/helm
-    - chamber export sidebase/docs/dev --format dotenv
+    - chamber export sidebase/docs/dev --format dotenv > .env
     - aws eks update-kubeconfig --name eks-cluster-sidestream
     - helmsman --apply --debug -f helmsman.yml
 

@@ -57,3 +57,9 @@ resources:
   requests:
     cpu: 150m
     memory: 2Gi
+
+secrets:
+  name: sidebase-docs-secrets
+  data:
+    algolia_app_id: ""
+    algolia_api_key: ""
