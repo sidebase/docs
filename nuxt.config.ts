@@ -7,7 +7,6 @@ export default defineNuxtConfig({
       plausible: {
         domain: 'sidebase.io',
       },
-      /*
       algolia: {
         applicationId: process.env.ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_API_KEY,
@@ -16,7 +15,6 @@ export default defineNuxtConfig({
           indexName: 'sidebase'
         }
       }
-      */
     },
   },
 })
