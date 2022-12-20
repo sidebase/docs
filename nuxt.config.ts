@@ -8,21 +8,13 @@ export default defineNuxtConfig({
         domain: 'sidebase.io',
       },
       algolia: {
-        applicationId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_API_KEY,
+        applicationId: '0XMIMAT23T',
+        apiKey: '49706735aa647d9c385da14759ce62d9',
         langAttribute: 'lang',
         docSearch: {
           indexName: 'sidebase'
         }
       }
     },
-    algolia: {
-      applicationId: process.env.ALGOLIA_APP_ID,
-      apiKey: process.env.ALGOLIA_API_KEY,
-      langAttribute: 'lang',
-      docSearch: {
-        indexName: 'sidebase'
-      }
-    }
   },
 })
