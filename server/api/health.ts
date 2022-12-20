@@ -1,5 +1,5 @@
 export default defineEventHandler((event) => {
     return {
-        service: 'online'
+        service: process.env.ALGOLIA_API_KEY
     }
 })
