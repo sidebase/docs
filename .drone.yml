@@ -12,7 +12,11 @@ trigger:
 steps:
 - name: publish-sidebase-docs-on-merge-main
   image: plugins/docker
-
+  environment:
+    ALGOLIA_API_KEY:
+      from_secret: ALGOLIA_API_KEY
+    ALGOLIA_APP_ID:
+      from_secret: ALGOLIA_APP_ID
   settings:
     repo: ghcr.io/sidebase/docs/sidebase-docs
     tags:
@@ -25,6 +29,9 @@ steps:
     context:  ./
     cache_from:
       - ghcr.io/sidebase/docs/sidebase-docs:main
+    build_args_from_env:
+      - ALGOLIA_API_KEY
+      - ALGOLIA_APP_ID
     registry:  https://ghcr.io
     username:
       from_secret: SIDECHART_USERNAME
