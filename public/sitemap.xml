@@ -9,292 +9,292 @@
 
 <url>
   <loc>https://sidebase.io/</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/welcome</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/getting-started</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-session</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-prisma/getting-started</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/getting-started</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sidebase.io/blog</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/welcome/stacks</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/welcome/quick-start</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/welcome/getting-help</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/welcome/faq</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage/nuxt-3</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components/nuxt-3</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage/typescript</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components/typescript</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage/prisma</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components/prisma</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage/trpc</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components/trpc</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage/nuxt-auth</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components/nuxt-auth</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://sidebase.io/sidebase/usage/tailwindcss</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <loc>https://sidebase.io/sidebase/components/tailwindcss</loc>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/ressources</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/ressources/coding-setup</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/ressources/breakpoint-debugging</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/sidebase/ressources/commands</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/getting-started/installation</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/getting-started/quick-start</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/getting-started/getting-help</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/configuration</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/configuration/nuxt-config</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/configuration/nuxt-auth-handler</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/application-side</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/application-side/session-access-and-management</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/application-side/custom-sign-in-page</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/application-side/protecting-pages</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/server-side</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/server-side/session-access-and-route-protection</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/server-side/jwt-access</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/server-side/rest-api</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/recipes</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/recipes/strapi</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/recipes/directus</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/recipes/custom-session-data</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/recipes/nuxt-auth-example</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/ressources/external-blogs-guides-examples</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/ressources/glossary</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/ressources/security</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-auth/ressources/prior-work</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-prisma/getting-started/installation</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-prisma/getting-started/quick-start</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-prisma/getting-started/getting-help</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/getting-started/installation</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/getting-started/quick-start</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/getting-started/getting-help</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/recipes</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/recipes/arbitrary-parser</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/recipes/user-data</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/nuxt-parse/recipes/async-data</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/blog/posts/6-reasons-to-follow-sidebase</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/blog/posts/weekly-updates-30-11-22</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sidebase.io/blog/posts/welcome-to-the-new-sidebase-website</loc>
-  <lastmod>2023-01-02T13:05:46+00:00</lastmod>
+  <lastmod>2023-01-03T13:08:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
