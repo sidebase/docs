@@ -21,9 +21,9 @@ onMounted(() => {
     />
 
     <div class="relative">
-      <section class="relative w-full min-h-[96vh] mt-20">
+      <section class="relative w-full min-h-[96vh] mt-28">
 
-        <div class="max-w-5xl mx-auto text-center">
+        <div class="max-w-6xl mx-auto text-center">
           <h1 class="StaticGradientText text-8xl font-bold">
             sidebase
           </h1>

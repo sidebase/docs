@@ -5,7 +5,7 @@ import DiamondSeparator from "~/components/landing/terminal/DiamondSeparator.vue
 </script>
 
 <template>
-  <div data-aos="fade-up" class="relative h-[550px] bg-gray-900 w-full rounded-lg shadow px-4 py-5 font-mono leading-tight overflow-y-auto">
+  <div data-aos="fade-up" class="relative h-[600px] bg-gray-900 w-full rounded-lg shadow px-4 py-5 font-mono leading-tight overflow-y-auto">
     <TerminalLine>
       $ npm create sidebase@latest
     </TerminalLine>
@@ -26,6 +26,16 @@ import DiamondSeparator from "~/components/landing/terminal/DiamondSeparator.vue
     </TerminalLine>
     <TerminalLine>
       ? What will your project be called? › my-sidebase-affair
+    </TerminalLine>
+    <TerminalLine>
+      ? What stack would you like to use for your new project? More information: https://sidebase.io/sidebase/welcome/stacks › - Use arrow-keys. Return to submit.
+    </TerminalLine>
+    <br />
+    <TerminalLine>
+      ❯ &nbsp;Merino
+    </TerminalLine>
+    <TerminalLine>
+      &nbsp;&nbsp; Cheviot
     </TerminalLine>
   </div>
 </template>
