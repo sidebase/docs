@@ -21,7 +21,7 @@ onMounted(() => {
     />
 
     <div class="relative">
-      <section class="relative w-full min-h-[96vh] mt-28">
+      <section class="relative w-full min-h-[96vh] mt-20">
 
         <div class="max-w-6xl mx-auto text-center">
           <h1 class="StaticGradientText text-8xl font-bold">
@@ -31,25 +31,25 @@ onMounted(() => {
             The productive way to start building fullstack Nuxt 3 applications.
           </h2>
           <h3 class="text-xl mt-8">
-            sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more.
+            sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more!
           </h3>
         </div>
 
         <div class="max-w-5xl mx-auto relative mt-24">
-          <div data-aos="fade-up" data-aos-duration="1000" >
+          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" >
             <div
-                class="SpinAnimation absolute w-[300px] h-[300px] left-[-100px] top-[70px] bg-green-700 rounded-full"
+                class="SpinAnimation absolute w-[400px] h-[400px] left-[-100px] top-[70px] bg-green-700 rounded-full"
             />
             <div
-                class="SpinAnimation absolute w-[300px] h-[300px] left-[50%] bg-blue-700 rounded-full"
+                class="SpinAnimation absolute w-[400px] h-[400px] left-[50%] bg-blue-700 rounded-full"
                 style="animation-duration: 10000ms"
             />
             <div
-                class="SpinAnimation absolute w-[300px] h-[300px] right-[50%] bg-pink-700 rounded-full"
+                class="SpinAnimation absolute w-[400px] h-[400px] right-[50%] bg-pink-700 rounded-full"
                 style="animation-direction: reverse; animation-duration: 8000ms"
             />
             <div
-                class="SpinAnimation absolute w-[300px] h-[300px] right-[-100px] top-[150px] bg-yellow-700 rounded-full"
+                class="SpinAnimation absolute w-[400px] h-[400px] right-[-100px] top-[150px] bg-yellow-700 rounded-full"
                 style="animation-direction: reverse; animation-duration: 10000ms"
             />
           </div>
