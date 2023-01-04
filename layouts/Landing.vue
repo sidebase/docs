@@ -12,10 +12,6 @@ onMounted(() => {
 
 <template>
   <div class="relative">
-    <div class="absolute top-0 right-0 select-none">
-      <NuxtImg src="/green-blur.png" alt="Background Image" />
-    </div>
-
     <Banner
         badge-text="We are hiring!"
         text="Are you interested in working on sidebase?"
@@ -24,9 +20,45 @@ onMounted(() => {
     />
 
     <div class="relative">
-      <article class="SidebaseContainer" id="top-section">
-        <slot />
-      </article>
+      <section class="relative w-full min-h-[96vh] mt-20">
+
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="StaticGradientText text-8xl font-bold">
+            sidebase
+          </h1>
+          <h2 class="text-6xl font-semibold text-white">
+            The productive way to build fullstack Nuxt 3 applications.
+          </h2>
+          <h3 class="text-xl mt-8">
+            sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more.
+          </h3>
+        </div>
+
+        <div class="max-w-5xl mx-auto relative mt-24">
+          <div data-aos="fade-up" data-aos-duration="1000" >
+            <div
+                class="SpinAnimation absolute w-[300px] h-[300px] left-[-100px] top-[70px] bg-green-700 rounded-full"
+            />
+            <div
+                class="SpinAnimation absolute w-[300px] h-[300px] left-[50%] bg-blue-700 rounded-full"
+                style="animation-duration: 10000ms"
+            />
+            <div
+                class="SpinAnimation absolute w-[300px] h-[300px] right-[50%] bg-pink-700 rounded-full"
+                style="animation-direction: reverse; animation-duration: 8000ms"
+            />
+            <div
+                class="SpinAnimation absolute w-[300px] h-[300px] right-[-100px] top-[150px] bg-yellow-700 rounded-full"
+                style="animation-direction: reverse; animation-duration: 10000ms"
+            />
+
+          </div>
+
+          <div data-aos="fade-up" class="relative h-[550px] bg-gray-900 w-full rounded-lg shadow p-4">
+            Test
+          </div>
+        </div>
+      </section>
       <section class="pb-6">
         <div class="SidebaseContainer">
           <div class="Heading">
@@ -96,6 +128,18 @@ onMounted(() => {
   font-size: 1.3rem;
 }
 
+.StaticGradientText {
+  background: linear-gradient(to right, #81F6D4 10%, #12a87b 40%, #0FCF97 60%, #81F6D4 90%);
+  background-size: 200% auto;
+  background-position: 60% center;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .GradientText {
   background: linear-gradient(to right, #7bceb6 10%, #12a87b 40%, #0FCF97 60%, #7bceb6 90%);
   background-size: 200% auto;
@@ -129,6 +173,22 @@ onMounted(() => {
     to {
       background-position: 200% center;
     }
+  }
+}
+
+.SpinAnimation {
+  animation: linear 7000ms spin infinite;
+  transform-origin: center 35% 0;
+  filter: blur(80px);
+  opacity: 75%;
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
   }
 }
 </style>
