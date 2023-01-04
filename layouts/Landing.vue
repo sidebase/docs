@@ -4,6 +4,7 @@ import TestimonialsSection from "../components/landing/TestimonialsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
 import Banner from "~/components/landing/Banner.vue";
 import AOS from "aos";
+import Terminal from "~/components/landing/terminal/Terminal.vue";
 
 onMounted(() => {
   AOS.init()
@@ -22,12 +23,12 @@ onMounted(() => {
     <div class="relative">
       <section class="relative w-full min-h-[96vh] mt-20">
 
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-5xl mx-auto text-center">
           <h1 class="StaticGradientText text-8xl font-bold">
             sidebase
           </h1>
           <h2 class="text-6xl font-semibold text-white">
-            The productive way to build fullstack Nuxt 3 applications.
+            The productive way to start building fullstack Nuxt 3 applications.
           </h2>
           <h3 class="text-xl mt-8">
             sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more.
@@ -51,12 +52,9 @@ onMounted(() => {
                 class="SpinAnimation absolute w-[300px] h-[300px] right-[-100px] top-[150px] bg-yellow-700 rounded-full"
                 style="animation-direction: reverse; animation-duration: 10000ms"
             />
-
           </div>
 
-          <div data-aos="fade-up" class="relative h-[550px] bg-gray-900 w-full rounded-lg shadow p-4">
-            Test
-          </div>
+          <Terminal />
         </div>
       </section>
       <section class="pb-6">
