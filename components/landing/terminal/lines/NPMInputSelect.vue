@@ -32,7 +32,7 @@ export default defineComponent({
     </template>
 
     <template :class="userInputNPM === 1 ? 'block': 'hidden'">
-      <vt-text :lineDelay="0">✔ Would you like to run `npm install` after finishing up? … yes</vt-text>
+      <vt-text :lineDelay="0">✔ Would you like to run `npm install` after finishing up? … no</vt-text>
     </template>
   </div>
 </template>

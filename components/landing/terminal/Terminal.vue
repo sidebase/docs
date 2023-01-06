@@ -72,7 +72,6 @@ export default defineComponent({
         <vt-text :lineDelay="0">Now setting up <span class="text-green-500">my-first-sidebase-project</span>:</vt-text>
         <vt-text>✔ Adding Nuxt 3 merino-template</vt-text>
         <vt-text>✔ Adding Nuxt modules</vt-text>
-        <vt-spinner :duration="5" :line-delay="0" prefix="✔ Running `npm install`" />
         <br />
         <vt-text :lineDelay="0"><DiamondSeparator /></vt-text>
         <vt-text :lineDelay="0">✨ Project setup finished. Next steps are:</vt-text>
