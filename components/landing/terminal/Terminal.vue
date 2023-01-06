@@ -1,12 +1,32 @@
 <script>
 import SheepIcon from "~/components/landing/terminal/SheepIcon.vue";
 import DiamondSeparator from "~/components/landing/terminal/DiamondSeparator.vue";
-import { VTermynal, VtInput, VtProgress, VtText } from "@lehoczky/vue-termynal"
+import {VTermynal, VtInput, VtProgress, VtSpinner, VtText} from "@lehoczky/vue-termynal"
+import ModulesInputSelect from "~/components/landing/terminal/lines/ModulesInputSelect.vue";
+import StackInputSelect from "~/components/landing/terminal/lines/StackInputSelect.vue";
+import CiInputSelect from "~/components/landing/terminal/lines/CiInputSelect.vue";
+import GitInputSelect from "~/components/landing/terminal/lines/GitInputSelect.vue";
+import NPMInputSelect from "~/components/landing/terminal/lines/NPMInputSelect.vue";
 
 export default defineComponent({
-  components: { VTermynal, VtInput, VtProgress, VtText, SheepIcon, DiamondSeparator },
+  components: {
+    NPMInputSelect,
+    GitInputSelect,
+    VtSpinner,
+    CiInputSelect,
+    StackInputSelect, ModulesInputSelect, VTermynal, VtInput, VtProgress, VtText, SheepIcon, DiamondSeparator },
+  data() {
+    return {
+      nextId: undefined
+    }
+  },
   methods: {
     scrollToNewLine(line) {
+      if (line.id === 'no-scroll') {
+        return;
+      }
+      this.nextId = line.id
+
       const containerElement = this.$refs.container
 
       if (line.offsetTop - line.offsetHeight > containerElement.offsetHeight) {
@@ -27,7 +47,6 @@ export default defineComponent({
 <template>
   <div data-aos="fade-up" data-aos-delay="100" class="relative w-full">
     <v-termynal
-        restart-button
         @before-new-line="scrollToNewLine($event)"
         @restart="scrollToTop()"
         class="AnimatedTerminal"
@@ -42,39 +61,18 @@ export default defineComponent({
         <vt-text :lineDelay="0"><DiamondSeparator /></vt-text>
         <vt-text :lineDelay="0">sidebase helps you to create fully typesafe Nuxt 3 app in seconds!</vt-text>
         <br />
-        <vt-text :lineDelay="0">What will your project be called?</vt-text>
-        <vt-input>my-first-sidebase-project</vt-input>
-        <br />
-        <vt-text :lineDelay="0">What stack would you like to use for your new project?</vt-text>
-        <vt-text :lineDelay="0"><span class="text-blue-300">❯&nbsp;&nbsp;<span class="underline">Merino</span></span></vt-text>
-        <vt-text>&nbsp;&nbsp;&nbsp;Cheviot</vt-text>
-        <br />
-        <vt-text :lineDelay="0">Which modules would you like to use?</vt-text>
-        <vt-text :lineDelay="0">◯&nbsp;&nbsp;Prisma ORM</vt-text>
-        <vt-text :lineDelay="0">◯&nbsp;&nbsp;nuxt-auth</vt-text>
-        <vt-text :lineDelay="0">◯&nbsp;&nbsp;tRPC 10</vt-text>
-        <vt-text :lineDelay="0">◯&nbsp;&nbsp;Tailwind CSS</vt-text>
-        <vt-text>◯&nbsp;&nbsp;Naive UI</vt-text>
-        <br />
-        <vt-text :lineDelay="0">Initialize a new git repository? <span class="text-gray-500">› (Y/n)</span></vt-text>
-        <vt-input>Yes</vt-input>
-        <br />
-        <vt-text :lineDelay="0">Initialize a default CI pipeline?</vt-text>
-        <vt-text :lineDelay="0">◯&nbsp;&nbsp;No CI</vt-text>
-        <vt-text>◯&nbsp;&nbsp;GitHub Actions</vt-text>
-        <br />
-        <vt-text :lineDelay="0">Would you like to run `npm install` after finishing up? <span class="text-gray-500">› (Y/n)</span></vt-text>
-        <vt-input>Yes</vt-input>
+        <vt-text :lineDelay="1000">What will your project be called? <span class="font-bold text-gray-500">my-first-sidebase-project</span></vt-text>
+        <StackInputSelect :next-id="nextId" />
+        <ModulesInputSelect :next-id="nextId" />
+        <GitInputSelect :next-id="nextId" />
+        <CiInputSelect :next-id="nextId" />
+        <NPMInputSelect :next-id="nextId" />
         <br />
         <vt-text :lineDelay="0"><DiamondSeparator /></vt-text>
         <vt-text :lineDelay="0">Now setting up <span class="text-green-500">my-first-sidebase-project</span>:</vt-text>
         <vt-text>✔ Adding Nuxt 3 merino-template</vt-text>
         <vt-text>✔ Adding Nuxt modules</vt-text>
-        <vt-text>✔ Adding README</vt-text>
-        <br />
-        <vt-text :lineDelay="0"><DiamondSeparator /></vt-text>
-        <vt-text :lineDelay="0">Running <span class="text-blue-300">npm install</span>:</vt-text>
-        <vt-progress />
+        <vt-spinner :duration="5" :line-delay="0" prefix="✔ Running `npm install`" />
         <br />
         <vt-text :lineDelay="0"><DiamondSeparator /></vt-text>
         <vt-text :lineDelay="0">✨ Project setup finished. Next steps are:</vt-text>
@@ -101,5 +99,13 @@ export default defineComponent({
 .line-container {
   height: 600px;
   overflow: hidden;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 }
 </style>
