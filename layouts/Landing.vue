@@ -21,22 +21,31 @@ onMounted(() => {
     />
 
     <div class="relative">
-      <section class="relative w-full min-h-[96vh] mt-20">
+      <section class="relative w-full min-h-[96vh] mt-10 lg:mt-20">
 
-        <div class="max-w-6xl mx-auto text-center">
-          <h1 class="StaticGradientText text-8xl font-bold">
+        <div class="max-w-6xl mx-auto text-center px-5 lg:px-0">
+          <h1 class="StaticGradientText text-7xl lg:text-8xl font-bold">
             sidebase
           </h1>
-          <h2 class="text-6xl font-semibold text-white">
+          <h2 class="text-3xl lg:text-6xl font-bold dark:text-white">
             The productive way to start building fullstack Nuxt 3 applications.
           </h2>
-          <h3 class="text-xl mt-8">
+          <h3 class="text-xl mt-8 text-gray-800 dark:text-gray-400">
             sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more!
           </h3>
         </div>
 
-        <div class="max-w-5xl mx-auto relative mt-24">
-          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" >
+        <div class="relative mx-auto flex items-center space-x-5 w-full justify-center mt-6 px-5 lg:px-0">
+          <ButtonLink href="/sidebase/welcome">
+            Get started →
+          </ButtonLink>
+          <NuxtLink href="https://github.com/sidebase/sidebase" target="_blank" class="text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white font-bold">
+            Star us on Github
+          </NuxtLink>
+        </div>
+
+        <div class="relative mt-10 lg:mt-24 overflow-x-clip">
+          <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="max-w-5xl mx-auto">
             <div
                 class="SpinAnimation absolute w-[400px] h-[400px] left-[-100px] top-[70px] bg-green-700 rounded-full"
             />
@@ -54,7 +63,27 @@ onMounted(() => {
             />
           </div>
 
-          <Terminal />
+          <div class="max-w-5xl px-5 lg:px-0 mx-auto ">
+            <div class="relative group rounded-lg overflow-hidden">
+              <Terminal />
+              <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 group-hover:opacity-100 group-hover:bg-black/50 transition grid place-items-center">
+                <div class="text-center">
+                  <h1 class="text-4xl font-bold text-white">
+                    Get started in one line!
+                  </h1>
+                  <h3>
+                    Use our sidebase CLI to boostrap your project in minutes!
+                  </h3>
+                  <div class="flex items-center mt-4 space-x-2 mx-auto justify-center">
+                    <span class="bg-black rounded-lg px-4 py-1 text-white">
+                      npm create sidebase@latest
+                    </span>
+                    <CopyButton content="npm create sidebase@latest" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="pb-6">
