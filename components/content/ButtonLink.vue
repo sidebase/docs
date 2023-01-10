@@ -26,9 +26,7 @@ defineProps({
 <style scoped>
 .ButtonLink {
   position: relative;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  padding-bottom: 2px;
+  padding: 0.1rem 1.5rem;
   line-height: 3rem;
   font-weight: bold;
   color: white;
