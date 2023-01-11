@@ -91,7 +91,8 @@ export default defineComponent({
 .AnimatedTerminal {
   width: 100%;
   padding: 40px 20px 20px 20px;
-  font-size: 16px;
+
+  @apply text-xs md:text-sm lg:text-base;
 }
 
 .line-container {
