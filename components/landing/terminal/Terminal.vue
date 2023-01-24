@@ -72,11 +72,14 @@ export default defineComponent({
         <vt-text :lineDelay="0">Now setting up <span class="text-green-500">my-first-sidebase-project</span>:</vt-text>
         <vt-text>✔ Adding Nuxt 3 merino-template</vt-text>
         <vt-text>✔ Adding Nuxt modules</vt-text>
+        <vt-text>✔ Adding README</vt-text>
         <br />
         <vt-text :lineDelay="0"><DiamondSeparator /></vt-text>
         <vt-text :lineDelay="0">✨ Project setup finished. Next steps are:</vt-text>
         <vt-text :lineDelay="0"><span class="text-blue-500">> cd my-first-sidebase-project</span></vt-text>
         <vt-text :lineDelay="0"><span class="text-blue-500">> npm install</span></vt-text>
+        <vt-text :lineDelay="0"><span class="text-blue-500">> npx prisma db push</span></vt-text>
+        <vt-text :lineDelay="0"><span class="text-blue-500">> npx prisma generate</span></vt-text>
         <vt-text :lineDelay="0"><span class="text-blue-500">> npm run dev</span></vt-text>
         <br />
         <vt-text :lineDelay="0">Stuck? Join us at <span class="text-blue-500">https://discord.gg/auc8eCeGzx</span></vt-text>
