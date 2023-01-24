@@ -26,7 +26,7 @@ In order to correctly edit the docs, please visit the respective module reposito
 - [sidebase/nuxt-session](https://github.com/sidebase/nuxt-session)
 - [sidebase/nuxt-parse](https://github.com/sidebase/nuxt-parse)
 
-Once changes to the docs are merged into the `main` branch in der folder
+Once changes to the docs are merged into the `main` branch in the folder
 `/docs/content` or `/docs/public` (for images and other media files), the changes will automatically
 be merged into this repository and the website will be redeployed.
 
