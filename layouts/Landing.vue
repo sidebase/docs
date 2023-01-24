@@ -27,8 +27,8 @@ onMounted(() => {
           <h1 class="StaticGradientText text-7xl lg:text-8xl font-bold">
             sidebase
           </h1>
-          <h2 class="text-3xl lg:text-6xl font-bold dark:text-white">
-            The productive way to start building fullstack Nuxt 3 applications.
+          <h2 class="text-3xl lg:text-6xl font-bold dark:text-white px-4">
+            The productive way to build fullstack Nuxt 3 applications.
           </h2>
           <h3 class="text-xl mt-8 text-gray-800 dark:text-gray-400">
             sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more!
