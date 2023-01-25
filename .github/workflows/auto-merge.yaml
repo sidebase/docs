@@ -6,12 +6,10 @@ on:
 
 jobs:
   autoapprove:
-    name: Auto Approve a PR by sideborg
-    runs-on: ubuntu-latest # Environment on which the job runs
+    runs-on: ubuntu-latest
+    if: github.actor == 'sideborg'
     steps:
-      - name: Auto approve
-        uses: hmarr/auto-approve-action@v2.0.0
-        if: github.actor == 'sideborg'
+      - uses: hmarr/auto-approve-action@v3
         with:
           github-token: ${{ secrets.GH_APPROVE_TOKEN }}
   automerge:
