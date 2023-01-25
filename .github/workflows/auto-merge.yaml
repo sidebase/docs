@@ -1,4 +1,4 @@
-name: Auto approve and merge PRs by sidebot
+name: Auto approve and merge PRs by sideborg
 
 # Trigger the workflow on pull request
 on:
@@ -6,14 +6,14 @@ on:
 
 jobs:
   autoapprove:
-    name: Auto Approve a PR by sidebot
+    name: Auto Approve a PR by sideborg
     runs-on: ubuntu-latest # Environment on which the job runs
     steps:
       - name: Auto approve
         uses: hmarr/auto-approve-action@v2.0.0
         if: github.actor == 'sideborg'
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.GH_APPROVE_TOKEN }}
   automerge:
     name: Auto merge after successful checks
     needs: autoapprove
@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Auto merge
         uses: pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a
-        if: github.actor == 'sidebot'
+        if: github.actor == 'sideborg'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           MERGE_LABELS: sync
