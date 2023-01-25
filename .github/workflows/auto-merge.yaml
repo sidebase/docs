@@ -7,7 +7,7 @@ on:
 jobs:
   autoapprove:
     runs-on: ubuntu-latest
-    if: github.actor == 'zoey-kaiser'
+    if: github.actor == 'sideborg'
     steps:
       - uses: hmarr/auto-approve-action@v3
         with:
@@ -15,12 +15,12 @@ jobs:
   automerge:
     name: Auto merge after successful checks
     needs: autoapprove
+    if: github.actor == 'sideborg'
     runs-on: ubuntu-latest
     steps:
       - name: Auto merge
         uses: pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a
-        if: github.actor == 'sideborg'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          MERGE_LABELS: sync
+          MERGE_LABELS: ""
           MERGE_METHOD: squash
