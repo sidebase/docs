@@ -15,7 +15,7 @@ export default defineAppConfig({
     header: {
       logo: true,
       showLinkIcon: true,
-      exclude: []
+      exclude: ['/nuxt-auth', '/nuxt-session', '/nuxt-parse', '/nuxt-prisma']
     },
     footer: {
       credits: {
