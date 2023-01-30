@@ -2,7 +2,6 @@
 import ModulesSection from "../components/landing/ModulesSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
-import Banner from "~/components/landing/Banner.vue";
 import AOS from "aos";
 import Terminal from "~/components/landing/terminal/Terminal.vue";
 
@@ -13,29 +12,22 @@ onMounted(() => {
 
 <template>
   <div class="relative">
-    <Banner
-        badge-text="We are hiring!"
-        text="Are you interested in working on sidebase?"
-        link="https://sidestream.jobs.personio.de/"
-        link-text="See our open positions!"
-    />
-
     <div class="relative">
-      <section class="relative w-full min-h-[96vh] mt-10 lg:mt-20">
+      <section class="relative w-full min-h-[96vh] mt-10">
 
-        <div class="max-w-6xl mx-auto text-center px-5 lg:px-0">
-          <h1 class="StaticGradientText text-7xl lg:text-8xl font-bold">
+        <div class="max-w-5xl mx-auto text-center px-5 lg:px-0">
+          <h1 class="StaticGradientText text-6xl lg:text-7xl font-bold">
             sidebase
           </h1>
-          <h2 class="text-3xl lg:text-6xl font-bold dark:text-white px-4">
+          <h2 class="text-3xl lg:text-5xl font-bold dark:text-white px-4">
             The productive way to build fullstack Nuxt 3 applications.
           </h2>
-          <h3 class="text-xl mt-8 text-gray-800 dark:text-gray-400">
+          <h3 class="text-lg mt-8 text-gray-800 dark:text-gray-400">
             sidebase is a web app development kit to build production ready fullstack apps quickly. We build sidebase to provide a modular, modern, fully-typed and best-practice approach to make your ideas a reality. Around a core of TypeScript and Nuxt 3 sidebase adds components like Prisma ORM, tRPC, Authentication, CI, testing and more!
           </h3>
         </div>
 
-        <div class="relative mx-auto flex items-center space-x-5 w-full justify-center mt-6 px-5 lg:px-0">
+        <div class="relative mx-auto flex items-center space-x-5 w-full justify-center mt-5 px-5 lg:px-0">
           <ButtonLink href="/sidebase/welcome">
             Get started →
           </ButtonLink>
@@ -116,7 +108,7 @@ onMounted(() => {
         </div>
       </section>
       <section class="relative pt-6" data-aos="zoom-up">
-        <div class="absolute bottom-[-8vh] left-0 select-none">
+        <div class="absolute bottom-[-9vh] left-0 select-none">
           <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
         </div>
         <div class="relative SidebaseContainer">
@@ -131,11 +123,6 @@ onMounted(() => {
           <TestimonialsSection />
         </div>
       </section>
-      <Banner
-          text="Are you interested in enterprise solutions?"
-          link="https://www.sidestream.tech/en/contact"
-          link-text="Contact us here!"
-      />
     </div>
   </div>
 </template>
