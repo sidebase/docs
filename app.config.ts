@@ -10,7 +10,7 @@ export default defineAppConfig({
     },
     aside: {
       level: 1,
-      exclude: ['/nuxt-auth', '/nuxt-session', '/nuxt-parse', '/sidebase', '/nuxt-prisma']
+      exclude: ['/modules']
     },
     header: {
       logo: true,

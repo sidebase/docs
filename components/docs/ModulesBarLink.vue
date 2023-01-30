@@ -24,11 +24,13 @@ const active = ref(props.currentPageId.includes(props.title))
       class="pt-1 pb-1.5 px-3 rounded-md cursor-pointer"
       :class="active ? 'bg-pickled-bluewood-700/60': 'hover:bg-pickled-bluewood-700/60'"
   >
-    <div class="flex items-center gap-1">
+    <div class="flex items-center gap-1 text-center">
       <div class="hidden md:block">
         <Icon :name="icon" />
       </div>
-      {{title}}
+      <span>
+        {{title}}
+      </span>
     </div>
   </NuxtLink>
 </template>

@@ -5,8 +5,10 @@ const { page } = useContent()
 
 <template>
   <div>
-    <ModulesBar :current-page-id="page._id" />
-    <div class="h-[60px]" />
+    <div class="hidden md:flex">
+      <ModulesBar :current-page-id="page._id" />
+    </div>
+    <div class="lg:h-[60px]" />
     <DocsPageLayout>
       <slot />
     </DocsPageLayout>
