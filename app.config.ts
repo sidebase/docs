@@ -33,11 +33,11 @@ export default defineAppConfig({
       textLinks: [
         {
           text: 'Imprint',
-          href: '/',
+          href: 'https://www.sidestream.tech/en/imprint',
         },
         {
           text: 'Jobs',
-          href: '/',
+          href: 'https://sidestream.jobs.personio.de/',
         }
       ]
     }
