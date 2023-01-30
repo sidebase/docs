@@ -3,6 +3,9 @@ kind: pipeline
 type: docker
 name: publish-sidebase-docs-on-merge-main
 
+node:
+  docker: cluster
+
 trigger:
   event:
     - push

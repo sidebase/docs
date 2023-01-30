@@ -27,8 +27,8 @@ service:
       value: "scaffoldWashere"
 
 podAutoscaler:
-  minReplicas: 1
-  maxReplicas: 1
+  minReplicas: 2
+  maxReplicas: 3
   metrics:
     - type: Resource
       resource:
