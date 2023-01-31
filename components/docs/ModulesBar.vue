@@ -25,7 +25,7 @@ const props = defineProps({
       />
       <ModulesBarLink
           title="nuxt-parse"
-          icon="heroicons-outline:clipboard-document-list"
+          icon="heroicons-outline:funnel"
           href="/nuxt-parse"
           :current-page-id="currentPageId"
       />

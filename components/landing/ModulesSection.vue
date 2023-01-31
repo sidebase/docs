@@ -18,7 +18,7 @@ import Module from "./Module.vue";
     />
     <Module
         name="nuxt-parse"
-        icon="heroicons-solid:document-check"
+        icon="heroicons-solid:funnel"
         link="/nuxt-parse"
         description="A nuxt focused package to make data validation and parsing easy."
     />
