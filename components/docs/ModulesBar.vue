@@ -14,25 +14,25 @@ const props = defineProps({
       <ModulesBarLink
           title="nuxt-auth"
           icon="heroicons-outline:lock-closed"
-          href="/modules/nuxt-auth"
+          href="/nuxt-auth"
           :current-page-id="currentPageId"
       />
       <ModulesBarLink
           title="nuxt-session"
           icon="heroicons-outline:clock"
-          href="/modules/nuxt-session"
+          href="/nuxt-session"
           :current-page-id="currentPageId"
       />
       <ModulesBarLink
           title="nuxt-prisma"
           icon="heroicons-outline:circle-stack"
-          href="/modules/nuxt-prisma"
+          href="/nuxt-prisma"
           :current-page-id="currentPageId"
       />
       <ModulesBarLink
           title="nuxt-parse"
           icon="heroicons-outline:clipboard-document-list"
-          href="/modules/nuxt-parse"
+          href="/nuxt-parse"
           :current-page-id="currentPageId"
       />
     </div>
