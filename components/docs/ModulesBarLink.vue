@@ -22,7 +22,7 @@ const active = ref(props.currentPageId.includes(props.title))
   <NuxtLink
       :to="href"
       class="pt-1 pb-1.5 px-3 rounded-md cursor-pointer"
-      :class="active ? 'bg-pickled-bluewood-700/60': 'hover:bg-pickled-bluewood-700/60'"
+      :class="active ? 'bg-gray-200 dark:bg-pickled-bluewood-700/60': 'hover:bg-gray-200 dark:hover:bg-pickled-bluewood-700/60'"
   >
     <div class="flex items-center gap-1 text-center">
       <div class="hidden md:block">
