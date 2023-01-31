@@ -13,7 +13,10 @@ import Testimonial from '~/components/landing/Testimonial.vue'
           :testimonial="testimonials[3]"
       />
       <Testimonial
-          :testimonial="testimonials[7]"
+          :testimonial="testimonials[6]"
+      />
+      <Testimonial
+          :testimonial="testimonials[9]"
       />
     </div>
     <div>
@@ -24,7 +27,10 @@ import Testimonial from '~/components/landing/Testimonial.vue'
           :testimonial="testimonials[4]"
       />
       <Testimonial
-          :testimonial="testimonials[8]"
+          :testimonial="testimonials[7]"
+      />
+      <Testimonial
+          :testimonial="testimonials[10]"
       />
     </div>
     <div>
@@ -35,7 +41,10 @@ import Testimonial from '~/components/landing/Testimonial.vue'
           :testimonial="testimonials[5]"
       />
       <Testimonial
-          :testimonial="testimonials[6]"
+          :testimonial="testimonials[8]"
+      />
+      <Testimonial
+          :testimonial="testimonials[11]"
       />
     </div>
   </div>
