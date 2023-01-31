@@ -24,12 +24,6 @@ const props = defineProps({
           :current-page-id="currentPageId"
       />
       <ModulesBarLink
-          title="nuxt-prisma"
-          icon="heroicons-outline:circle-stack"
-          href="/nuxt-prisma"
-          :current-page-id="currentPageId"
-      />
-      <ModulesBarLink
           title="nuxt-parse"
           icon="heroicons-outline:clipboard-document-list"
           href="/nuxt-parse"
