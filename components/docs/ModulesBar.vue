@@ -29,6 +29,12 @@ const props = defineProps({
           href="/nuxt-parse"
           :current-page-id="currentPageId"
       />
+      <ModulesBarLink
+          title="nuxt-pdf"
+          icon="heroicons-outline:document"
+          href="/nuxt-pdf"
+          :current-page-id="currentPageId"
+      />
     </div>
   </div>
 </template>
