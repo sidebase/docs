@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
   <div
-      class="fixed z-10 bg-gray-100 dark:bg-pickled-bluewood-800/80 w-full pt-2 pb-2.5 grid place-items-center"
+      class="hidden md:grid sticky top-[64px] z-10 bg-gray-100 dark:bg-pickled-bluewood-800/80 w-full pt-2 pb-2.5 place-items-center"
       style="backdrop-filter: var(--elements-backdrop-filter)"
   >
     <div class="flex items-center gap-2">
