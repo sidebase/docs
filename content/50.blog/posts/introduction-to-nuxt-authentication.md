@@ -10,7 +10,7 @@ position: Core Team Member
 avatar: /blog/introduction-to-nuxt-authentication/nils.png
 avatarLink: https://twitter.com/bracket_john_
 
-published: false
+published: true
 ---
 
 Getting headaches when thinking about implementing authentication in Nuxt 3? Let’s release some pain with the help of this article. Explore the current and future options for Nuxt 3 User Authentication.
@@ -21,7 +21,7 @@ At the moment we see three options that we will explain more in detail throughou
 - The community port from Nuxt 2
 - The official Nuxt Auth Module which is not released yet
 
-Contents
+### Contents
 - [What's authentication?](#whats-authentication)
 - [Why should I use a Nuxt Auth Module for authentication?](#why-should-i-use-a-nuxt-auth-module-for-authentication)
 - [What’s the current status of Nuxt Authentication?](#whats-the-current-status-of-nuxt-authentication)
@@ -55,7 +55,7 @@ In November 2022 Nuxt presented their stable version of Nuxt 3. They already rel
 For developers seeking to implement authentication in Nuxt 3 we currently see three (potential) options
 
 1. nuxt-auth
-    - It’s an authentication module that builds on top of next-auth, a popular authentication solution for Next.js.
+    - It’s an authentication module* that builds on top of next-auth, a popular authentication solution for Next.js.
     - As Next.js is widely used (more than Nuxt, actually), [sidebase](https://github.com/sidebase/docs) built on top of this and called it nuxt-auth. This authentication module was generally very well accepted throughout the community.
     - Next Auth has a big focus on OAuth. So if you want to implement this kind of authentication, our module is a good choice. Through wrapping Next Auth we provide support for 40-50 of providers like Google, Apple, Facebook and Co..
 2. Community port from Nuxt 2
@@ -68,6 +68,9 @@ There are also a bunch of smaller libraries for specific use cases. If there’s
 One example is passport-local. This module allows authentication via username and password in Node.js applications. It can integrate with Passport (authentication middleware for Node.js). Local authentication can be integrated into any application or framework that supports Connect-style middleware.
 
 Another example is passport-activedirectory. It’s a module for authenticating users in a Node.js application using Active Directory. Active Directory is a Microsoft technology for managing users, groups, and computers in a network. It provides additional functionality that can be useful for verifying user information. Especially in cases where users belong to nested AD groups. 
+
+_*In this article we use the terms ‘module’ and ‘library’ interchangeably as they are not clearly defined within the Javascript and Nuxt ecosystem._
+
 
 ## What’s the future of nuxt-auth?
 
