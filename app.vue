@@ -18,7 +18,7 @@ nav {
 }
 
 .SidebaseContainer {
-  max-width: 85rem;
+  max-width: 80rem;
   margin: auto auto 5rem;
 
   @apply px-12 2xl:px-0;
