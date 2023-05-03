@@ -27,7 +27,7 @@ const selectedVersionName = props.currentPageId.split(":")[2]
       <ModulesBarLink
           title="nuxt-session"
           icon="heroicons-outline:clock"
-          href="/nuxt-session"
+          href="https://github.com/sidebase/nuxt-session/"
           :current-page-id="currentPageId"
       />
       <ModulesBarLink
