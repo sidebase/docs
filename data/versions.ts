@@ -20,7 +20,7 @@ const VERSIONS: Record<string, Record<string,Version>> = {
 }
 
 export const getLatestVersion = (module: string) => {
-    return Object.values(VERSIONS[module]).find(version => version.latest)
+    return Object.keys(VERSIONS[module]).find(versionName => VERSIONS[versionName]?.latest)
 }
 
 export default VERSIONS

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VERSIONS from '~/data/versions'
+import VERSIONS, { getLatestVersion } from '~/data/versions'
 const props = defineProps({
   title: {
     type: String,
@@ -21,6 +21,7 @@ const props = defineProps({
 
 const active = ref(props.currentPageId.includes(props.title))
 const versions = VERSIONS[props.title] || {}
+const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? props.currentPageId.split(":")[2] : undefined
 </script>
 
 <template>
@@ -37,6 +38,9 @@ const versions = VERSIONS[props.title] || {}
             </div>
             <span class="pt-[1px]">
               {{title}}
+              <span v-if="active && selectedVersionName">
+                ({{ selectedVersionName }})
+              </span>
             </span>
             <div v-if="Object.values(versions).length > 0">
               <Icon name="ic:outline-keyboard-arrow-down" />
