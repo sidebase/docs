@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Vue School',
-    avatar: 'https://pbs.twimg.com/profile_images/1041751402148757504/gDGC6DlH_400x400.jpg',
+    avatar: 'https://avatars.githubusercontent.com/u/25163471?s=280&v=4',
     twitterLink: 'https://twitter.com/VueSchool_io/status/1603699078151430147',
     position: 'Vue Learning platform',
     text: '@sidebase_io looks like a pretty slick starter template for working with @nuxt_js 3',

@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import ModulesBarLink from "~/components/docs/ModulesBarLink.vue";
 const props = defineProps({
-  currentPageId: String,
+  currentPageId: {
+    type: String,
+    required: true,
+  },
 })
 </script>
 
