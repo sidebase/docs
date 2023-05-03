@@ -9,7 +9,7 @@ const VERSIONS: Record<string, Record<string,Version>> = {
         '0.6.0': {
             latest: false,
             preRelease: true,
-            link: '/nuxt-auth/v0.6/getting-started'
+            link: '/nuxt-auth/v0.6.0/getting-started'
         },
         '0.5.0': {
             latest: true,
@@ -17,6 +17,10 @@ const VERSIONS: Record<string, Record<string,Version>> = {
             link: '/nuxt-auth/getting-started'
         },
     }
+}
+
+export const getLatestVersion = (module: string) => {
+    return Object.values(VERSIONS[module]).find(version => version.latest)
 }
 
 export default VERSIONS
