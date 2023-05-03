@@ -14,7 +14,7 @@ const selectedVersionName = props.currentPageId.split(":")[2]
 <template>
   <div>
     <div
-      class="hidden md:grid sticky top-[64px] z-10 bg-gray-100 dark:bg-pickled-bluewood-800/80 w-full pt-2 pb-2.5 place-items-center"
+      class="hidden md:grid sticky top-[64px] z-10 bg-gray-100/50 dark:bg-pickled-bluewood-800/80 w-full pt-2 pb-2.5 place-items-center"
       style="backdrop-filter: var(--elements-backdrop-filter)"
   >
     <div class="flex items-center gap-2">
@@ -45,7 +45,7 @@ const selectedVersionName = props.currentPageId.split(":")[2]
       </div>
   </div>
 
-  <div v-if="currentPageId.includes('v')" class="flex justify-center bg-red-200 dark:bg-red-700 py-2 text-xs font-bold">
+  <div v-if="currentPageId.includes('v')" class="flex justify-center bg-orange-200 dark:bg-orange-700 py-2 text-xs font-bold">
     You are viewing the docs for {{ selectedVersionName }}. This is not the latest version.
   </div>
   </div>

@@ -31,13 +31,16 @@ const versions = VERSIONS[props.title] || {}
           class="px-3 rounded-md cursor-pointer py-1.5"
           :class="active ? 'bg-gray-200 dark:bg-pickled-bluewood-700/60': 'hover:bg-gray-200 dark:hover:bg-pickled-bluewood-700/60'"
         >
-          <div class="flex items-center gap-1 text-center">
-            <div class="hidden md:block">
+          <div class="flex items-center space-x-0.5 text-center">
+            <div class="hidden md:block mr-1">
               <Icon :name="icon" />
             </div>
-            <span>
+            <span class="pt-[1px]">
               {{title}}
             </span>
+            <div v-if="Object.values(versions).length > 0">
+              <Icon name="ic:outline-keyboard-arrow-down" />
+            </div>
           </div>
         </button>
       </NuxtLink>
