@@ -45,7 +45,7 @@ const selectedVersionName = props.currentPageId.split(":")[2]
       </div>
   </div>
 
-  <div v-if="currentPageId.includes('v')" class="flex justify-center bg-red-700 py-2 text-xs font-bold">
+  <div v-if="currentPageId.includes('v')" class="flex justify-center bg-red-200 dark:bg-red-700 py-2 text-xs font-bold">
     You are viewing the docs for {{ selectedVersionName }}. This is not the latest version.
   </div>
   </div>
