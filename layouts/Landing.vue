@@ -107,8 +107,8 @@ onMounted(() => {
           <ModulesSection />
         </div>
       </section>
-      <section class="relative pt-6" data-aos="zoom-up">
-        <div class="absolute bottom-[-8.2vh] left-0 select-none">
+      <section class="relative py-6" data-aos="zoom-up">
+        <div class="absolute bottom-0 left-0 select-none">
           <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
         </div>
         <div class="relative SidebaseContainer">
