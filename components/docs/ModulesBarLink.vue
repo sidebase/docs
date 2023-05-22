@@ -38,8 +38,8 @@ const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? pr
             </div>
             <span class="pt-[1px]">
               {{title}}
-              <span v-if="active && selectedVersionName">
-                ({{ selectedVersionName }})
+              <span v-if="active">
+                ({{ selectedVersionName || 'Latest' }})
               </span>
             </span>
             <div v-if="Object.values(versions).length > 0">
