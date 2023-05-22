@@ -72,6 +72,7 @@ const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? pr
 	 position: relative;
 }
  .dropdown nav {
+   display: block !important;
 	 position: absolute;
 	 top: 100%;
 	 left: 0;
