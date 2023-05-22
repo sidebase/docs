@@ -10,7 +10,7 @@ nav {
 }
 
 .container {
-  @apply max-w-[90rem] !important;
+  @apply max-w-[85em] !important;
 }
 
 .aside-nav {
@@ -18,7 +18,7 @@ nav {
 }
 
 .SidebaseContainer {
-  max-width: 90rem;
+  max-width: 80rem;
   margin: auto auto 5rem;
 
   @apply px-12 2xl:px-0;

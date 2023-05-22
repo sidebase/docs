@@ -13,13 +13,13 @@ onMounted(() => {
 <template>
   <div class="relative">
     <div class="relative">
-      <section class="relative w-full min-h-[96vh] mt-10">
+      <section class="relative w-full min-h-[96vh] mt-20">
 
         <div class="max-w-5xl mx-auto text-center px-5 lg:px-0">
           <h1 class="StaticGradientText text-6xl lg:text-7xl font-bold">
             sidebase
           </h1>
-          <h2 class="text-3xl lg:text-5xl font-bold dark:text-white px-4">
+          <h2 class="text-3xl  lg:text-5xl font-bold dark:text-white px-4">
             The productive way to build fullstack Nuxt 3 applications.
           </h2>
           <h3 class="text-lg mt-8 text-gray-800 dark:text-gray-400">
@@ -107,8 +107,8 @@ onMounted(() => {
           <ModulesSection />
         </div>
       </section>
-      <section class="relative pt-6" data-aos="zoom-up">
-        <div class="absolute bottom-[-10vh] left-0 select-none">
+      <section class="relative py-6" data-aos="zoom-up">
+        <div class="absolute bottom-0 left-0 select-none">
           <NuxtImg class="w-[100vw] opacity-20 dark:opacity-50" src="/glow-bottom.webp" alt="Background Image" />
         </div>
         <div class="relative SidebaseContainer">
@@ -123,6 +123,19 @@ onMounted(() => {
           <TestimonialsSection />
         </div>
       </section>
+      <div class="dark:bg-pickled-bluewood-900">
+        <div class="container mx-auto px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            In need of a consultant?<br />Reach out and we can arrange a call! 
+          </h2>
+          <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
+            <a href="mailto:nils@sidestream.tech" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Send us an email!
+            </a>
+            <a href="https://www.sidestream.tech/" target="_blank" class="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Visit website <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
