@@ -48,7 +48,7 @@ const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? pr
           </div>
         </button>
       </NuxtLink>
-      <nav v-if="Object.values(versions).length > 0" tabindex="0" class="bg-gray-200 dark:bg-pickled-bluewood-700 w-[225px] rounded-md">
+      <nav v-if="Object.values(versions).length > 0" tabindex="2" class="bg-gray-200 dark:bg-pickled-bluewood-700 w-[225px] rounded-md">
         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li v-for="versionName in Object.keys(versions)" :key="versionName">
             <NuxtLink :to="versions[versionName].link" class="px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-600 dark:hover:text-white flex items-center justify-between">
@@ -72,13 +72,14 @@ const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? pr
 	 position: relative;
 }
  .dropdown nav {
+   display: block !important;
 	 position: absolute;
 	 top: 100%;
 	 left: 0;
 	 opacity: 0;
 	 visibility: hidden;
 	 transition: 300ms all;
-   z-index: 5;
+   z-index: 99999;
 }
  .dropdown:hover nav {
 	 opacity: 1;
