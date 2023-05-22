@@ -6,12 +6,12 @@ export interface Version {
 
 const VERSIONS: Record<string, Record<string,Version>> = {
     'nuxt-auth': {
-        '0.6.0': {
+        '0.6': {
             latest: false,
             preRelease: true,
-            link: '/nuxt-auth/v0.6.0/getting-started'
+            link: '/nuxt-auth/v0.6/getting-started'
         },
-        '0.5.0': {
+        '0.5': {
             latest: true,
             preRelease: false,
             link: '/nuxt-auth/getting-started'
