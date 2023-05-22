@@ -52,7 +52,7 @@ const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? pr
         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li v-for="versionName in Object.keys(versions)" :key="versionName">
             <NuxtLink :to="versions[versionName].link" class="px-4 py-2 hover:bg-gray-300 dark:hover:bg-gray-600 dark:hover:text-white flex items-center justify-between">
-              v.{{ versionName }}
+              v{{ versionName }}
               <span v-if="versions[versionName].latest" class="bg-green-200 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
                 Latest
               </span>
