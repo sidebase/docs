@@ -21,7 +21,7 @@ const props = defineProps({
 
 const active = ref(props.currentPageId.includes(props.title))
 const versions = VERSIONS[props.title] || {}
-const selectedVersionName = props.currentPageId.split(":")[2].includes('v') ? props.currentPageId.split(":")[2] : undefined
+const selectedVersionName = props.currentPageId.split(":")[2].startsWith('v') ? props.currentPageId.split(":")[2] : undefined
 </script>
 
 <template>
