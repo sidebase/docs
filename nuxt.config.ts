@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  preset: 'vercel-edge',
   extends: '@nuxt-themes/docus',
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/plausible'],
   css: ["aos/dist/aos.css"],
