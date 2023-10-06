@@ -37,7 +37,7 @@ export default defineAppConfig({
         },
         {
           text: 'Jobs',
-          href: 'https://sidestream.jobs.personio.de/',
+          href: 'https://www.sidestream.tech/team#jobs',
         }
       ]
     }
