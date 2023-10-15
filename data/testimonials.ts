@@ -46,7 +46,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Criston Mascarenhas',
-    avatar: 'https://pbs.twimg.com/profile_images/1595417385099460611/A-bByAXy_400x400.jpg',
+    avatar: 'https://avatars.githubusercontent.com/u/20360870?v=4',
     text: '@sidebase_io is a Vue alternative for create-t3-app @t3dotgg',
     twitterLink: 'https://twitter.com/devcriston/status/1615803349332525056'
   },
@@ -71,7 +71,7 @@ const testimonials: Testimonial[] = [
   {
     name: 'Mahsa Mir',
     text: 'Awesome 👏 good job Sidebase',
-    avatar: 'https://pbs.twimg.com/profile_images/1531636864356065282/OoOr5Asg_400x400.png',
+    avatar: 'https://pbs.twimg.com/profile_images/1705129485274591232/Q1dVgqdg_400x400.jpg',
     twitterLink: 'https://twitter.com/mahsamiiiir/status/1603005278571696131'
   },
   {
