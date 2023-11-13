@@ -50,7 +50,7 @@ const selectedVersionName = props.currentPageId.split(":")[2]
   </div>
   <div v-else class="flex justify-center bg-700-200 dark:bg-green-700 py-2 text-xs font-bold">
     <p>
-      You are viewing the newest version. You can view the docs for 0.5
+      You are viewing the docs for the newest version. You can view the docs for 0.5
       <NuxtLink to="/nuxt-auth/v0.5" class="underline">
         here
       </NuxtLink>
