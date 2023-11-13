@@ -10,7 +10,7 @@ export default defineAppConfig({
     },
     aside: {
       level: 1,
-      exclude: ['/modules', '/nuxt-auth/v0.6']
+      exclude: ['/modules', '/nuxt-auth/v0.5', '/nuxt-auth/v0.6']
     },
     header: {
       logo: true,
