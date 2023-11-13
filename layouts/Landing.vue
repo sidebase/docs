@@ -12,6 +12,7 @@ onMounted(() => {
 
 <template>
   <div class="relative">
+    <LandingBanner badge-text="Release 0.6.0" text="A new version of NuxtAuth has been released." link="https://github.com/sidebase/nuxt-auth/releases/tag/0.6.0" link-text="Check it out →"  />
     <div class="relative">
       <section class="relative w-full min-h-[96vh] mt-20">
 
