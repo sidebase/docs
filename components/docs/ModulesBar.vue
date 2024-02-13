@@ -48,13 +48,5 @@ const selectedVersionName = props.currentPageId.split(":")[2]
   <div v-if="currentPageId.includes(':v')" class="flex justify-center bg-orange-200 dark:bg-orange-700 py-2 text-xs font-bold">
     You are viewing the docs for {{ selectedVersionName }}. This is not the latest version.
   </div>
-  <div v-else class="flex justify-center bg-700-200 dark:bg-green-700 py-2 text-xs font-bold">
-    <p>
-      You are viewing the docs for the newest version. You can view the docs for 0.5
-      <NuxtLink to="/nuxt-auth/v0.5/getting-started" class="underline">
-        here
-      </NuxtLink>
-    </p>
-  </div>
   </div>
 </template>
