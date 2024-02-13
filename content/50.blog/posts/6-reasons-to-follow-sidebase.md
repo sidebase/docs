@@ -7,7 +7,7 @@ timestamp: 1670502328
 
 author: Daniel
 position: Core team member
-avatar: https://pbs.twimg.com/profile_images/1515737666784006146/Ahnj_AdZ_400x400.jpg
+avatar: https://i.imgur.com/UEwUL4e.png
 avatarLink: https://twitter.com/dankremerov
 
 published: true
