@@ -1,11 +1,16 @@
-node_modules
-.vitepress/cache
-*.iml
+## User-specific files
+.DS_Store
 .idea
+
+## Vite Press related
+.vitepress/cache
+.vitepress/dist
+
+node_modules
+*.iml
 *.log*
 .nuxt
 .vscode
-.DS_Store
 coverage
 dist
 sw.*
