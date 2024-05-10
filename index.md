@@ -1,6 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: landing
+layout: home
 
 hero:
   name: "sidebase"
