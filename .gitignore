@@ -1,0 +1,13 @@
+node_modules
+.vitepress/cache
+*.iml
+.idea
+*.log*
+.nuxt
+.vscode
+.DS_Store
+coverage
+dist
+sw.*
+.env
+.output
