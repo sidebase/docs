@@ -15,7 +15,20 @@ export default defineConfig({
     logo: '/icon.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/guide/markdown-examples' }
+      { text: 'Examples', link: '/guide/markdown-examples' },
+      {
+        text: '0.8.0',
+        items: [
+          {
+            text: '0.7.2',
+            link: 'https://github.com/sidebase/nuxt-auth/tree/0.7.2/docs/content'
+          },
+          {
+            text: '0.6.7',
+            link: 'https://github.com/sidebase/nuxt-auth/tree/0.6.7/docs/content'
+          }
+        ]
+      }
     ],
     sidebar: [
       {
