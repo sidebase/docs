@@ -1,4 +1,4 @@
-import { DefaultTheme } from "vitepress";
+import type { DefaultTheme } from 'vitepress'
 
 export const routes: DefaultTheme.Config['sidebar'] = {
   '/guide': [
@@ -8,17 +8,17 @@ export const routes: DefaultTheme.Config['sidebar'] = {
       items: [
         {
           text: 'Introduction',
-          link: '/introduction'
+          link: '/introduction',
         },
         {
           text: 'Installation',
-          link: '/installation'
+          link: '/installation',
         },
         {
           text: 'Choosing the provider',
-          link: '/choose-provider'
+          link: '/choose-provider',
         },
-      ]
+      ],
     },
     {
       text: 'AuthJS Provider',
@@ -26,21 +26,21 @@ export const routes: DefaultTheme.Config['sidebar'] = {
       items: [
         {
           text: 'Quick Start',
-          link: '/quick-start'
+          link: '/quick-start',
         },
         {
           text: 'NuxtAuthHandler',
-          link: '/nuxt-auth-handler'
+          link: '/nuxt-auth-handler',
         },
         {
           text: 'Custom pages',
-          link: '/custom-pages'
+          link: '/custom-pages',
         },
         {
           text: 'Session data',
-          link: '/session-data'
+          link: '/session-data',
         },
-      ]
+      ],
     },
     {
       text: 'Local / Refresh Provider',
@@ -48,17 +48,17 @@ export const routes: DefaultTheme.Config['sidebar'] = {
       items: [
         {
           text: 'Quick Start',
-          link: '/quick-start'
+          link: '/quick-start',
         },
         {
           text: 'Session data',
-          link: '/session-data'
+          link: '/session-data',
         },
         {
           text: 'Refresh token',
-          link: '/refresh-token'
+          link: '/refresh-token',
         },
-      ]
+      ],
     },
     {
       text: 'Advanced',
@@ -69,8 +69,8 @@ export const routes: DefaultTheme.Config['sidebar'] = {
           collapsed: true,
           items: [
             { text: 'Global', link: '/middleware/global' },
-            { text: 'Page', link: '/middleware/page' }
-          ]
+            { text: 'Page', link: '/middleware/page' },
+          ],
         },
         {
           text: 'Deployment',
@@ -78,11 +78,11 @@ export const routes: DefaultTheme.Config['sidebar'] = {
           items: [
             { text: 'Self-hosted', link: '/deployment/self-hosted' },
             { text: 'Vercel', link: '/deployment/vercel' },
-            { text: 'Netlify', link: '/deployment/netlify' }
-          ]
+            { text: 'Netlify', link: '/deployment/netlify' },
+          ],
         },
-        { text: 'Caching', link: '/caching' }
-      ]
-    }
-  ]
+        { text: 'Caching', link: '/caching' },
+      ],
+    },
+  ],
 }
