@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { transformerTwoslash} from '@shikijs/vitepress-twoslash'
 
 export default defineConfig({
   title: "Welcome",
@@ -6,6 +7,7 @@ export default defineConfig({
   description: "The productive way to build fullstack Nuxt 3 applications.",
   lang: 'en-US',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  markdown: { codeTransformers: [ transformerTwoslash()  ]},
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
