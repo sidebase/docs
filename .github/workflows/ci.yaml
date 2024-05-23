@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20.6.1
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.6.1
+
+      - name: setup
+        run: npm i -g @antfu/ni
+
+      - name: install
+        run: nci
+
+      - name: lint
+        run: nr lint
+
+      - name: typecheck
+        run: nr typecheck
