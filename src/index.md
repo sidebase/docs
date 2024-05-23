@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Get started!
-      link: /guide/getting-started
+      link: /guide/getting-started/introduction
     - theme: alt
       text: GitHub
       link: https://github.com/sidebase/nuxt-auth
