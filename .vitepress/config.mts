@@ -3,10 +3,13 @@ import { transformerTwoslash} from '@shikijs/vitepress-twoslash'
 
 export default defineConfig({
   title: "Welcome",
-  titleTemplate: ":title - sidebase",
+  titleTemplate: ":title - by sidebase",
   description: "The productive way to build fullstack Nuxt 3 applications.",
   lang: 'en-US',
+  appearance: 'dark',
+  lastUpdated: true,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  // @ts-expect-error The import types are broken?
   markdown: { codeTransformers: [ transformerTwoslash()  ]},
   themeConfig: {
     nav: [
