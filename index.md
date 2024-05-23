@@ -15,8 +15,8 @@ hero:
       text: GitHub
       link: https://github.com/sidebase/nuxt-auth
   image:
-    src: /vitepress-logo-large.webp
-    alt: VitePress
+    src: /icon.svg
+    alt: NuxtAuth
 
 features:
   - icon: 📝
