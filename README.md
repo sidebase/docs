@@ -1,0 +1,1 @@
+# NuxtAuth Docs
