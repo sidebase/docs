@@ -19,16 +19,16 @@ hero:
     alt: NuxtAuth
 
 features:
-  - icon: 📝
-    title: Focus on Your Content
-    details: Effortlessly create beautiful documentation sites with just markdown.
-  - icon: 📝
-    title: Enjoy the Vite DX
-    details: Instant server start, lightning fast hot updates, and leverage Vite ecosystem plugins.
-  - icon: 📝
-    title: Customize with Vue
-    details: Use Vue syntax and components directly in markdown, or build custom themes with Vue.
-  - icon: 🚀
-    title: Ship Fast Sites
-    details: Fast initial load with static HTML, fast post-load navigation with client-side routing.
+  - icon: 🔗
+    title: OAuth
+    details: Effortlessly connect your Nuxt 3 application with Google, Github, Azure and countless others.
+  - icon: 🖥️
+    title: Use your own backend
+    details: Use the local and refresh providers, to define your endpoints and watch the magic happen.
+  - icon: ⚙️
+    title: Middleware
+    details: Easily define the authentication rules for all of your pages.
+  - icon: 🔐
+    title: REST API
+    details: Everything authentication related automatically gets servered as new API routes.
 ---
