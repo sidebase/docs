@@ -15,7 +15,7 @@ export default defineConfig({
     logo: '/icon.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/guide/markdown-examples' },
+      { text: 'Getting Started', link: '/getting-started' },
       {
         text: '0.8.0',
         items: [
