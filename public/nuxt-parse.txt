@@ -1,1 +1,0 @@
-Nuxt-parse test media file
