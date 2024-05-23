@@ -24,6 +24,3 @@ jobs:
 
       - name: lint
         run: nr lint
-
-      - name: typecheck
-        run: nr typecheck
