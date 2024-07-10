@@ -27,7 +27,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <template v-if="userInputModulesStep !== 4">
+    <div :class="userInputModulesStep !== 4 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         Which modules would you like to use?
       </VtText>
@@ -46,9 +46,9 @@ export default defineComponent({
       <VtText :line-delay="0">
         <span class="leftMarginLarge">enter/return: Complete answer</span>
       </VtText>
-    </template>
+    </div>
 
-    <template v-if="userInputModulesStep === 0">
+    <div :class="userInputModulesStep === 0 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ◯<span class="leftMargin"><span class="text-blue-300 underline">Prisma ORM</span><span class="font-bold text-gray-500 ml-2">- Next-generation Node.js and TypeScript ORM. See more: https://www.prisma.io/</span></span>
       </VtText>
@@ -65,9 +65,9 @@ export default defineComponent({
         ◯<span class="leftMargin">Naive UI</span>
       </VtText>
       <VtText id="userInputModules" :line-delay="0" />
-    </template>
+    </div>
 
-    <template v-if="userInputModulesStep === 1">
+    <div :class="userInputModulesStep === 1 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ◉<span class="leftMargin"><span class="text-blue-300 underline">Prisma ORM</span><span class="font-bold text-gray-500 ml-2">- Next-generation Node.js and TypeScript ORM. See more: https://www.prisma.io/</span></span>
       </VtText>
@@ -84,9 +84,9 @@ export default defineComponent({
         ◯<span class="leftMargin">Naive UI</span>
       </VtText>
       <VtText id="userInputModules" :line-delay="0" />
-    </template>
+    </div>
 
-    <template v-if="userInputModulesStep === 2">
+    <div :class="userInputModulesStep === 2 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ◉<span class="leftMargin">Prisma ORM</span>
       </VtText>
@@ -103,9 +103,9 @@ export default defineComponent({
         ◯<span class="leftMargin">Naive UI</span>
       </VtText>
       <VtText id="userInputModules" :line-delay="0" />
-    </template>
+    </div>
 
-    <template v-if="userInputModulesStep === 3">
+    <div :class="userInputModulesStep === 3 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ◉<span class="leftMargin">Prisma ORM</span>
       </VtText>
@@ -122,13 +122,13 @@ export default defineComponent({
         ◯<span class="leftMargin">Naive UI</span>
       </VtText>
       <VtText id="userInputModules" :line-delay="0" />
-    </template>
+    </div>
 
-    <template v-if="userInputModulesStep === 4">
+    <div :class="userInputModulesStep === 4 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ✔ Which modules would you like to use? › Prisma ORM, nuxt-auth
       </VtText>
-    </template>
+    </div>
   </div>
 </template>
 

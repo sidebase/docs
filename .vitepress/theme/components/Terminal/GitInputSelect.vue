@@ -27,7 +27,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <template :class="userInputCI === 0 ? 'block' : 'hidden'">
+    <div :class="userInputCI === 0 ? 'block' : 'hidden'">
       <VtText id="no-scroll" :line-delay="0">
         ? Initialize a default CI pipeline? › - Use arrow-keys. Return to submit.
       </VtText>
@@ -38,13 +38,13 @@ export default defineComponent({
         <span class="leftMarginLarge">GitHub Actions</span>
       </VtText>
       <VtText id="userInputCI" :line-delay="0" />
-    </template>
+    </div>
 
-    <template :class="userInputCI === 1 ? 'block' : 'hidden'">
+    <div :class="userInputCI === 1 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ✔ Initialize a default CI pipeline? › No CI
       </VtText>
-    </template>
+    </div>
   </div>
 </template>
 

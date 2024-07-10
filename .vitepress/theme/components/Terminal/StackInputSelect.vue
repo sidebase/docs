@@ -27,7 +27,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <template :class="modulesInputSelect === 0 ? 'block' : 'hidden'">
+    <div :class="modulesInputSelect === 0 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ? What stack would you like to use for your new project? More information: https://sidebase.io/sidebase/welcome/stacks › - Use arrow-keys. Return to submit.
       </VtText>
@@ -36,13 +36,13 @@ export default defineComponent({
       </VtText>
       <VtText><span class="leftMarginLarge">Cheviot</span></VtText>
       <VtText id="userInputStack" :line-delay="0" />
-    </template>
+    </div>
 
-    <template :class="modulesInputSelect === 1 ? 'block' : 'hidden'">
+    <div :class="modulesInputSelect === 1 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ✔ What stack would you like to use for your new project? More information: https://sidebase.io/sidebase/welcome/stacks › Merino
       </VtText>
-    </template>
+    </div>
   </div>
 </template>
 

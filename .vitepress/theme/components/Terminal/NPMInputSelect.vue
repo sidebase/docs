@@ -27,16 +27,16 @@ export default defineComponent({
 
 <template>
   <div>
-    <template :class="userInputNPM === 0 ? 'block' : 'hidden'">
+    <div :class="userInputNPM === 0 ? 'block' : 'hidden'">
       <VtText>? Would you like to run `npm install` after finishing up? <span class="text-gray-500">› (Y/n)</span></VtText>
       <VtText id="userInputNPM" :line-delay="0" />
-    </template>
+    </div>
 
-    <template :class="userInputNPM === 1 ? 'block' : 'hidden'">
+    <div :class="userInputNPM === 1 ? 'block' : 'hidden'">
       <VtText :line-delay="0">
         ✔ Would you like to run `npm install` after finishing up? … no
       </VtText>
-    </template>
+    </div>
   </div>
 </template>
 
