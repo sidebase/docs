@@ -28,6 +28,10 @@ export default defineComponent({
   },
   methods: {
     scrollToNewLine(line) {
+      if (line.id === 'reset') {
+        this.scrollToTop()
+        return
+      }
       if (line.id === 'no-scroll') {
         return
       }
@@ -38,7 +42,7 @@ export default defineComponent({
       if (line.offsetTop - line.offsetHeight > containerElement.offsetHeight) {
         containerElement.scrollTo({
           top:
-              line.offsetTop - line.offsetHeight - containerElement.offsetHeight + 100,
+              line.offsetTop - line.offsetHeight - containerElement.offsetHeight + 50,
           behavior: 'smooth',
         })
       }
@@ -58,7 +62,9 @@ export default defineComponent({
       @restart="scrollToTop()"
     >
       <div ref="container" class="line-container">
-        <VtInput>npm create sidebase@latest</VtInput>
+        <VtInput id="reset">
+          npm create sidebase@latest
+        </VtInput>
         <VtText :line-delay="0">
           <SheepIcon />
         </VtText>
