@@ -42,7 +42,7 @@ export default defineComponent({
       if (line.offsetTop - line.offsetHeight > containerElement.offsetHeight) {
         containerElement.scrollTo({
           top:
-              line.offsetTop - line.offsetHeight - containerElement.offsetHeight + 50,
+              line.offsetTop - line.offsetHeight - containerElement.offsetHeight + 100,
           behavior: 'smooth',
         })
       }
