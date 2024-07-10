@@ -7,6 +7,7 @@ export default defineConfig({
   titleTemplate: ':title - by sidebase',
   description: 'The productive way to build fullstack Nuxt 3 applications.',
   srcDir: 'src',
+  base: '/docs/',
   cleanUrls: true,
   lang: 'en-US',
   appearance: 'dark',
