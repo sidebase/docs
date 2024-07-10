@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "sidebase"
   text: "The productive way to build fullstack Nuxt 3 applications."
-  tagline: My great project tagline
+  tagline: "sidebase is a web app development kit to build production ready fullstack apps quickly."
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,10 +15,12 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Nuxt 3 with Vue 3 as the frontend
+  - title: Database models, migrations and queries with Prisma
+  - title: Strong data-validation using zod
+  - title: Integration with sidebase Nuxt 3 modules
+  - title: In-memory development SQL-database via sqlite3
+  - title: Linting via eslint
+  - title: CSS utilities via TailwindCSS
+  - title: CSS components from NaiveUI
 ---
