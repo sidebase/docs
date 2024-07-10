@@ -15,12 +15,20 @@ hero:
       link: https://github.com/sidebase
 
 features:
-  - title: Nuxt 3 with Vue 3 as the frontend
-  - title: Database models, migrations and queries with Prisma
-  - title: Strong data-validation using zod
-  - title: Integration with sidebase Nuxt 3 modules
-  - title: In-memory development SQL-database via sqlite3
-  - title: Linting via eslint
+  - title: Fast & Modern
+    details: Nuxt 3 with Vue 3 as the frontend
+  - title: Fulltime Fullstack
+    details: Database models, migrations and queries with Prisma
+  - title: Godly typing
+    details: Strong data-validation using zod
+  - title: sidebase ecosystem
+    details: Integration with sidebase Nuxt 3 modules
+  - title: Develop out of the box
+    details: In-memory development SQL-database via sqlite3
+  - title: Readable code by default
+    details: Linting via eslint with the config by antfu!
   - title: CSS utilities via TailwindCSS
-  - title: CSS components from NaiveUI
+    details: Quick and easy styling!
+  - title: Components from NaiveUI
+    details: Premade, battle-tested and complex components
 ---
