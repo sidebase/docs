@@ -3,7 +3,7 @@ description: "sidebase is made up of components like: Nuxt 3, TypeScript, Prisma
 ---
 # Overview
 
-The components pages gives an introduction to the different technologies, modules and libraries that sidebase uses to create the Merino and Cheviot stacks. Checkout [the introduction](/sidebase) for a broad intro or [the stacks page](/sidebase/welcome/stacks) if you want to refresh what any part of the previous sentence means. Go [back to the quick start](/sidebase/welcome/quick-start) if you've not created your sidebase-application yet.
+The components pages gives an introduction to the different technologies, modules and libraries that sidebase uses to create the Merino and Cheviot stacks. Checkout [the introduction](/sidebase/welcome/index) for a broad intro or [the stacks page](/sidebase/welcome/stacks) if you want to refresh what any part of the previous sentence means. Go [back to the quick start](/sidebase/welcome/quick-start) if you've not created your sidebase-application yet.
 
 Read on to get a per component:
 - introduction: What is the component good for?

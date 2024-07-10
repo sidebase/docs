@@ -33,7 +33,7 @@ The Merino stack allows fine-grained pick and choose for a selection of modules,
 - Configure `eslint`, `typescript` and VS Code extensions specifically for Nuxt 3
 - PrismaORM: Next-generation Node.js and TypeScript ORM. [Read more here](/sidebase/components/prisma)
 - tRPC: End-to-end typesafe APIs in Nuxt applications, pre-configured with [zod](https://github.com/colinhacks/zod) and [superjson](https://github.com/blitz-js/superjson) for best DX. [Read more here](/sidebase/components/trpc)
-- Authentication: Authentication via OAuth, Credentials and more, wraps NextAuth.js with 12k stars. [Read more here](/nuxt-auth)
+- Authentication: Authentication via OAuth, Credentials and more, wraps NextAuth.js with 12k stars. [Read more here](https://auth.sidebase.io)
 - Tailwind CSS: Uility-first CSS framework. [Read more here](/sidebase/components/tailwindcss)
 - Naive UI: A Vue 3 Component Library. Fairly Complete, Theme Customizable, Uses TypeScript, Fast. Kinda Interesting. [Read more here](https://www.naiveui.com/en-US/os-theme/components/button)
 - Git repository setup
@@ -55,7 +55,7 @@ The Cheviot stack is a batteries-included setup with a databse ORM, testing setu
 To use Cheviot, select "Cheviot" in the first step of the sidebase CLI. In detail, Cheviot proved the following for production ready, robust, maintainable, fullstack applications:
 - Fullstack [`Vue 3`](https://vuejs.org/) + [`Nuxt 3`](https://nuxt.com/),
 - Database models, migrations, queries and easy DB-switching via [`Prisma`](https://www.prisma.io/),
-- Deep Prisma integration: Use the client in your endpoints via [`nuxt-prisma`](/nuxt-prisma), Prisma client is auto-generated for `npm run dev` and other commands and more,
+- Deep Prisma integration: Use the client in your endpoints via [`nuxt-prisma`](/sidebase/components/prisma), Prisma client is auto-generated for `npm run dev` and other commands and more,
 - Frontend- and Backend data-transformation via [`nuxt-parse`](https://www.npmjs.com/package/@sidebase/nuxt-parse) and [`zod`](https://github.com/colinhacks/zod),
 - In-memory development SQL-database via [`sqlite3`](https://www.sqlite.org/index.html),
 - Github Actions pipeline to run testing, linting and test-start your app in production- and development-modes to smoke-test their functionality,

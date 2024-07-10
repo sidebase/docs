@@ -28,4 +28,4 @@ yarn run postinstall
 ```
 :::
 
-If the TypeScript setup still does not work now, it may be related to your editor setup. Checkout [the VS Code setup guide](/resources/coding-setup) to ensure a proper setup.
+If the TypeScript setup still does not work now, it may be related to your editor setup. Checkout [the VS Code setup guide](/sidebase/resources/coding-setup) to ensure a proper setup.

@@ -34,10 +34,10 @@ npm run dev          // Start the development server, use CTRL+C to stop
 
 If you're not familiar with the technologies that are used here, we suggest that you [get help](/sidebase/welcome/getting-help) or read through the introductions of each technology in the usage section:
 - [Quick Start](/sidebase/welcome/quick-start)
-- [Nuxt 3](/sidebase/usage/nuxt-3)
-- [TypeScript](/sidebase/usage/typescript)
-- [Prisma ORM](/sidebase/usage/prisma)
-- [Tailwind CSS](/sidebase/usage/tailwindcss)
+- [Nuxt 3](/sidebase/components/nuxt-3)
+- [TypeScript](/sidebase/components/typescript)
+- [Prisma ORM](/sidebase/components/prisma)
+- [Tailwind CSS](/sidebase/components/tailwindcss)
 
 ## Help! Typescript is throwing errors / my editor does not correctly support Vue Single File Components!
 

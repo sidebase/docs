@@ -49,7 +49,7 @@ yarn run dev
 ```
 :::
 
-After making sure that everything runs by opening [localhost:3000](http://localhost:3000) you can get started: Remove the minimal sidebase-starter `pages/index.vue` content and replace it with your own logic.
+After making sure that everything runs by opening `localhost:3000` you can get started: Remove the minimal sidebase-starter `pages/index.vue` content and replace it with your own logic.
 
 ### With Prisma
 

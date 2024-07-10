@@ -64,4 +64,4 @@ What follows are these steps in more detail.
     ```
     :::
 
-Read the [`nuxt-prisma` module docs](/nuxt-prisma) for further information on the `nuxt-prisma` module or read prismas' own [Why Prisma? docs](https://www.prisma.io/docs/concepts/overview/why-prisma).
+Read the [`nuxt-prisma` module docs](https://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/prisma-nuxt-module) for further information on the `nuxt-prisma` module or read prismas' own [Why Prisma? docs](https://www.prisma.io/docs/concepts/overview/why-prisma).

@@ -35,7 +35,7 @@ yarn create sidebase
 
 :::
 
-For first-steps after running the above command, [read the Quick Start section](/sidebase/welcome/quick-start#first-steps). Checkout the [component pages](/sidebase/components) to get familiar with the different components that sidebase uses.
+For first-steps after running the above command, [read the Quick Start section](/sidebase/welcome/quick-start#first-steps). Checkout the [component pages](/sidebase/components/index) to get familiar with the different components that sidebase uses.
 
 ## Why does sidebase exist?
 
@@ -49,7 +49,7 @@ There are several other sources of overhead that impact an app-development proce
 
 :::
 
-We want to reduce overhead where possible with reproducible processes, decisions and standardizations: We switched from Python backends + TypeScript frontends to fullstack TypeScript apps that allow better communication between all types of developers, modules like [`nuxt-auth`](/nuxt-auth) allow the integration of auth in minutes vs. hours, a module like `nuxt-swagger` makes the backend testable by the project manager and inexperienced devs, project setup via the sidebase CLI allows an efficient, reproducible and working project-setup for everyone from solo-developer to software team at big corp Y. sidebase is inspired by:
+We want to reduce overhead where possible with reproducible processes, decisions and standardizations: We switched from Python backends + TypeScript frontends to fullstack TypeScript apps that allow better communication between all types of developers, modules like [`nuxt-auth`](https://auth.sidebase.io) allow the integration of auth in minutes vs. hours, a module like `nuxt-swagger` makes the backend testable by the project manager and inexperienced devs, project setup via the sidebase CLI allows an efficient, reproducible and working project-setup for everyone from solo-developer to software team at big corp Y. sidebase is inspired by:
 - [create-t3-app](https://create.t3.gg/): We love their simplicity & focus on TypeScript
 - [remix](https://remix.run/): We love their aspiration and believe in the Web being able to deliver good, fast and reliable user-experiences
 - [TanStack](https://tanstack.com/): We love their modular approach that enhances every JS-ecosystem or app, independent of what stack one wants to use

@@ -28,4 +28,4 @@ Nuxt 3.0.0 with Nitro 1.0.0
   > Network:  http://[fd60:aaef:97c3:d900:ce:722e:a03c:dc0]:3000/
 ```
 
-When you open [localhost:3000](http://localhost:3000) you will see the sidebase-start-screen. It is very minimal - don't let that shock you. It is meant to be removed as one of your first actions and be replaced with your own beautiful idea. Checkout the [official nuxt-docs here](https://nuxt.com) for further reading and a deep-dive into Nuxt 3.
+When you open `localhost:3000` you will see the sidebase-start-screen. It is very minimal - don't let that shock you. It is meant to be removed as one of your first actions and be replaced with your own beautiful idea. Checkout the [official nuxt-docs here](https://nuxt.com) for further reading and a deep-dive into Nuxt 3.
