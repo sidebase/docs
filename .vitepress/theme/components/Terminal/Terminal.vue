@@ -3,11 +3,11 @@ import { defineComponent } from 'vue'
 
 import { VTermynal, VtInput, VtText } from '@lehoczky/vue-termynal'
 import SheepIcon from './SheepIcon.vue'
-import ModulesInputSelect from './lines/ModulesInputSelect.vue'
 import StackInputSelect from './lines/StackInputSelect.vue'
 import CiInputSelect from './lines/CiInputSelect.vue'
 import GitInputSelect from './lines/GitInputSelect.vue'
 import NPMInputSelect from './lines/NPMInputSelect.vue'
+import ModulesInputSelect from './lines/ModulesInputSelect.vue'
 
 export default defineComponent({
   components: {
