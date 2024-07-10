@@ -10,7 +10,6 @@ node_modules
 *.iml
 *.log*
 .nuxt
-.vscode
 coverage
 dist
 sw.*
