@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { routes as navRoutes } from './routes/navbar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,10 +13,7 @@ export default defineConfig({
   lastUpdated: true,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: navRoutes,
     sidebar: [
       {
         text: 'Examples',
