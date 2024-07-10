@@ -7,7 +7,7 @@ TypeScript (TS) is essential because it provides guard-rails for development: TS
 
 TS is configured via the `tsconfig.json` file in your project root. This is also what let's typescript know that it is "enabled". Writing a good `tsconfig.json` can be hard. Nuxt takes over a lot of the heavy lifting for us, so the default sidebase-`tsconfig` looks like this:
 ::: code-group
-```ts [tsconfig.ts]
+``` [tsconfig.ts]
 {
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json"
