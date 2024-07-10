@@ -8,11 +8,11 @@ hero:
   tagline: "sidebase is a web app development kit to build production ready fullstack apps quickly."
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get started
+      link: /sidebase/welcome
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Github
+      link: https://github.com/sidebase
 
 features:
   - title: Nuxt 3 with Vue 3 as the frontend

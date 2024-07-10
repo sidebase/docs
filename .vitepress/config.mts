@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { routes as navRoutes } from './routes/navbar'
+import { routes as sidebarRoutes } from './routes/sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,15 +16,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     nav: navRoutes,
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: sidebarRoutes,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sidebase' },
       { icon: 'x', link: 'https://twitter.com/sidebase_io' },
