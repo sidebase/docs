@@ -3,9 +3,9 @@ import { routes as navRoutes } from './routes/navbar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "sidebase",
+  title: 'sidebase',
   titleTemplate: ':title - by sidebase',
-  description: "The productive way to build fullstack Nuxt 3 applications.",
+  description: 'The productive way to build fullstack Nuxt 3 applications.',
   srcDir: 'src',
   cleanUrls: true,
   lang: 'en-US',
