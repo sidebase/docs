@@ -26,6 +26,9 @@ export default defineComponent({
       nextId: undefined,
     }
   },
+  mounted() {
+    this.nextId = undefined
+  },
   methods: {
     scrollToNewLine(line) {
       if (line.id === 'reset') {
@@ -58,6 +61,7 @@ export default defineComponent({
   <div class="group mt-10 lg:ml-12 lg:mt-8 relative h-[250px] lg:max-w-[600px] lg:h-[350px] overflow-hidden rounded-xl">
     <VTermynal
       class="AnimatedTerminal"
+      :lazy="true"
       @before-new-line="scrollToNewLine($event)"
       @restart="scrollToTop()"
     >
