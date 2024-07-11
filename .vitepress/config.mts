@@ -15,6 +15,10 @@ export default defineConfig({
   lastUpdated: true,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
+    logo: {
+      light: '/logo-light.svg',
+      dark: '/logo-dark.svg'
+    },
     nav: navRoutes,
     sidebar: sidebarRoutes,
     socialLinks: [
