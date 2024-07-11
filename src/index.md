@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Github
       link: https://github.com/sidebase
+  image:
+    src: /logo-dark.svg
+    alt: Terminal
 
 features:
   - title: Fast & Modern
