@@ -23,7 +23,7 @@ export default defineComponent({
   },
   data() {
     return {
-      nextId: undefined
+      nextId: undefined,
     }
   },
   methods: {
@@ -137,13 +137,15 @@ export default defineComponent({
         <h1 class="text-2xl font-bold text-white">
           Get started in one line!
         </h1>
-        <h3>
+        <h3 class="text-gray-50">
           Use our sidebase CLI to boostrap your project in minutes!
         </h3>
         <div class="flex items-center mt-4 space-x-2 mx-auto justify-center">
-          <span class="bg-gray-800 rounded-lg px-4 py-1 text-white">
-            npm create sidebase@latest
-          </span>
+          <input
+            value="npm create sidebase@latest"
+            readonly
+            class="bg-gray-800 rounded-lg px-4 py-1 text-white"
+          >
         </div>
       </div>
     </div>
