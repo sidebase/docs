@@ -4,8 +4,8 @@ import { routes as sidebarRoutes } from './routes/sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Welcome',
-  titleTemplate: ':title - sidebase',
+  title: 'sidebase',
+  titleTemplate: ':title - by SIDESTREAM',
   description: 'The productive way to build fullstack Nuxt 3 applications.',
   srcDir: 'src',
   base: '/docs/',
