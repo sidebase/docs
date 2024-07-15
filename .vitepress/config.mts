@@ -8,7 +8,7 @@ export default defineConfig({
   titleTemplate: ':title - by SIDESTREAM',
   description: 'The productive way to build fullstack Nuxt 3 applications.',
   srcDir: 'src',
-  base: '/docs/',
+  base: '/',
   cleanUrls: true,
   lang: 'en-US',
   appearance: 'dark',
