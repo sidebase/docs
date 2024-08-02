@@ -14,7 +14,10 @@ export default defineConfig({
   lang: 'en-US',
   appearance: 'dark',
   lastUpdated: true,
-  sitemap: sitemapConfig,
+  sitemap: {
+    ...sitemapConfig,
+    transformItems: items => items.filter(({ url }) => !url.startsWith('nuxt-auth'))
+  },
   head: headConfig,
   themeConfig: {
     logo: {
