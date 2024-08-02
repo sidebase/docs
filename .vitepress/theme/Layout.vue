@@ -22,9 +22,11 @@ const bannerConfig = {
 
 <template>
   <Layout>
+    <!--
     <template #nav-bar-content-after>
       <GithubStarsButton owner="sidebase" repo="sidebase" />
     </template>
+    -->
 
     <template #home-hero-image>
       <Terminal />
