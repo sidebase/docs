@@ -1,10 +1,10 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 
-import GithubStarsButton from './components/GithubStarsButton.vue'
 import Banner from './components/Banner.vue'
 import Terminal from './components/Terminal/Terminal.vue'
 import SpinningGradient from './components/SpinningGradient.vue'
+// import GithubStarsButton from './components/GithubStarsButton.vue'
 
 const { Layout } = DefaultTheme
 
