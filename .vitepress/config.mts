@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { routes as navRoutes } from './routes/navbar'
 import { routes as sidebarRoutes } from './routes/sidebar'
+import { headConfig, sitemapConfig } from './head'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -13,7 +14,8 @@ export default defineConfig({
   lang: 'en-US',
   appearance: 'dark',
   lastUpdated: true,
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  sitemap: sitemapConfig,
+  head: headConfig,
   themeConfig: {
     logo: {
       light: '/logo-light.svg',
