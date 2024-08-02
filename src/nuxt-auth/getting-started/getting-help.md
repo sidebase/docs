@@ -3,9 +3,7 @@ title: 'Redirecting'
 editLink: false
 ---
 
-<script setup>
-window.location.href = "https://auth.sidebase.io/resources/overview"
-</script>
+<meta http-equiv="refresh" content="0;URL='https://auth.sidebase.io/resources/overview'" />
 
 <h1 class="text-center">
   Redirecting.. Please wait.
