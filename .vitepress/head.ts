@@ -3,9 +3,7 @@ import type { HeadConfig } from 'vitepress'
 const HOST_NAME = 'https://sidebase.io'
 const OG_IMAGE_URL = `${HOST_NAME}/sidebase-og.jpg`
 
-export const sitemapConfig = {
-  hostname: HOST_NAME
-}
+export const sitemapConfig = { hostname: HOST_NAME }
 
 export const headConfig: HeadConfig[] = [
   ['link', { rel: 'icon', href: '/favicon.ico' }],
