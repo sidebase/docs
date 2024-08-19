@@ -2,9 +2,11 @@
 import DefaultTheme from 'vitepress/theme'
 
 import Banner from './components/Banner.vue'
-import Terminal from './components/Terminal/Terminal.vue'
+import Terminal from './components/Landing/Terminal/Terminal.vue'
 import SpinningGradient from './components/SpinningGradient.vue'
-// import GithubStarsButton from './components/GithubStarsButton.vue'
+import GithubFollowButton from './components/GithubFollowButton.vue'
+
+import TestimonialsSection from './components/Landing/Testimonials/Section.vue'
 
 const { Layout } = DefaultTheme
 
@@ -22,11 +24,9 @@ const bannerConfig = {
 
 <template>
   <Layout>
-    <!--
     <template #nav-bar-content-after>
-      <GithubStarsButton owner="sidebase" repo="sidebase" />
+      <GithubFollowButton user="sidebase" />
     </template>
-    -->
 
     <template #home-hero-image>
       <Terminal />
@@ -36,5 +36,34 @@ const bannerConfig = {
       <Banner v-if="isBannerEnabled" v-bind="bannerConfig" />
       <SpinningGradient />
     </template>
+
+    <template #home-features-after>
+      <div class="PageContainer mt-32">
+        <div class="container mx-auto">
+          <TestimonialsSection />
+        </div>
+      </div>
+    </template>
   </Layout>
 </template>
+
+<style scoped>
+.PageContainer {
+  position: relative;
+  padding: 0 24px;
+}
+@media (min-width: 640px) {
+  .PageContainer {
+      padding: 0 48px;
+  }
+}
+@media (min-width: 960px) {
+  .PageContainer {
+      padding: 0 64px;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1152px;
+}
+</style>
