@@ -6,39 +6,50 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  NODE_VER: 22.5
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 20.6.1
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: false
+
+      - name: Use Node.js ${{ env.NODE_VER }}
         uses: actions/setup-node@v4
         with:
-          node-version: 20.6.1
-
-      - name: Setup
-        run: npm i -g @antfu/ni
+          node-version: ${{ env.NODE_VER }}
+          cache: 'pnpm'
 
       - name: Install
-        run: nci
+        run: pnpm i
 
       - name: Lint
-        run: nr lint
+        run: pnpm lint
 
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 20.6.1
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: false
+
+      - name: Use Node.js ${{ env.NODE_VER }}
         uses: actions/setup-node@v4
         with:
-          node-version: 20.6.1
-
-      - name: Setup
-        run: npm i -g @antfu/ni
+          node-version: ${{ env.NODE_VER }}
+          cache: 'pnpm'
 
       - name: Install
-        run: nci
+        run: pnpm i
 
       - name: Build
-        run: nr build
+        run: pnpm build
