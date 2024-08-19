@@ -15,4 +15,5 @@ export const headConfig: HeadConfig[] = [
   ['meta', { property: 'og:locale', content: 'en' }],
   ['meta', { property: 'og:image', content: OG_IMAGE_URL }],
   ['meta', { property: 'og:url', content: HOST_NAME }],
+  ['script', { 'src': 'https://plausible.io/js/script.js', 'data-domain': 'sidebase.io', 'defer': '' }]
 ]
