@@ -12,7 +12,7 @@ import TestimonialsSection from './components/Landing/Testimonials/Section.vue'
 const { Layout } = DefaultTheme
 
 // Banner Configuration
-const isBannerEnabled = true
+const isBannerEnabled = false
 const bannerConfig = {
   // Leave text empty to disable the banner
   text: '✨ NuxtAuth v0.8.0 has been released! ✨',
