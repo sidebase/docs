@@ -33,6 +33,26 @@ export const testimonials: Testimonial[] = [
     twitterLink: 'https://twitter.com/VueSchool_io/status/1603699078151430147',
   },
   {
+    name: 'ineshbose',
+    avatar: 'https://avatars.githubusercontent.com/ineshbose',
+    text: 'Been following this issue/project for a few weeks now - this is fantastic, and also a project extremely close to my interest!',
+    githubLink: 'https://github.com/ineshbose',
+  },
+  {
+    name: 'Fabian',
+    avatar: 'https://avatars.githubusercontent.com/madebyfabian',
+    text: 'Thank you so much for sharing! Trying to use nuxt 3 on a larger project currently, and struggling a lot in terms of project structure, best practices, which ecosystems & libs to use',
+    githubLink: 'https://github.com/madebyfabian',
+    twitterLink: 'https://twitter.com/madebyfabian/status/1566393943578787840',
+  },
+  {
+    name: 'Criston Mascarenhas',
+    avatar: 'https://avatars.githubusercontent.com/crstnmac',
+    text: '@sidebase_io is a Vue alternative for create-t3-app @t3dotgg',
+    githubLink: 'https://github.com/crstnmac',
+    twitterLink: 'https://twitter.com/devcriston/status/1615803349332525056'
+  },
+  {
     name: 'Nikolas Burk',
     position: 'PrismaORM',
     avatar: 'https://avatars.githubusercontent.com/nikolasburk',
@@ -47,31 +67,11 @@ export const testimonials: Testimonial[] = [
     twitterLink: 'https://twitter.com/anorakio/status/1571415138741239808',
   },
   {
-    name: 'Criston Mascarenhas',
-    avatar: 'https://avatars.githubusercontent.com/crstnmac',
-    text: '@sidebase_io is a Vue alternative for create-t3-app @t3dotgg',
-    githubLink: 'https://github.com/crstnmac',
-    twitterLink: 'https://twitter.com/devcriston/status/1615803349332525056'
-  },
-  {
-    name: 'ineshbose',
-    avatar: 'https://avatars.githubusercontent.com/ineshbose',
-    text: 'Been following this issue/project for a few weeks now - this is fantastic, and also a project extremely close to my interest!',
-    githubLink: 'https://github.com/ineshbose',
-  },
-  {
-    name: 'Fabian',
-    avatar: 'https://avatars.githubusercontent.com/madebyfabian',
-    text: 'Thank you so much for sharing! Trying to use nuxt 3 on a larger project currently, and struggling a lot in terms of project structure, best practices, which ecosystems & libs to use',
-    githubLink: 'https://github.com/madebyfabian',
-    twitterLink: 'https://twitter.com/madebyfabian/status/1566393943578787840',
-  },
-  {
     name: 'Dvir Hazout',
     avatar: 'https://i.imgur.com/ajom275.jpeg',
     text: 'You added the missing part for me in nuxt3 to start experiment real world app with the framework',
     twitterLink: 'https://twitter.com/dvir_hazout/status/1588272629500489728',
-  }
+  },
 ]
 
 export default testimonials
