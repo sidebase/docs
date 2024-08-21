@@ -9,9 +9,6 @@ import { testimonials } from './data'
   <h1 class="text-3xl font-semibold">
     What do others think of sidebase?
   </h1>
-  <p class="text-base">
-    The opinions of the community matter a lot to us! Have a look at what other developers have said about sidebase.
-  </p>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
     <div
