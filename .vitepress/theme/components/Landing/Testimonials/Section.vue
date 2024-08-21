@@ -8,7 +8,7 @@ import { testimonials } from './data'
 <template>
   <div>
     <h1 class="text-3xl font-semibold">
-      What do others think of sidebase?
+      What do others think of <span class="GradientText">sidebase</span>?
     </h1>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">

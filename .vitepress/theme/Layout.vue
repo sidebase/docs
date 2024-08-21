@@ -34,12 +34,13 @@ const bannerConfig = {
 
     <template #home-hero-before>
       <Banner v-if="isBannerEnabled" v-bind="bannerConfig" />
-      <SpinningGradient />
+      <SpinningGradient class="pt-4" />
     </template>
 
     <template #home-features-after>
-      <div class="PageContainer mt-20">
-        <div class="container mx-auto space-y-20">
+      <div class="relative PageContainer">
+        <img class="absolute inset-0 w-full h-full opacity-50 dark:opacity-100" src="/backgrounds/purple-blur.webp" alt="Background Image">
+        <div class="container relative mx-auto space-y-20">
           <StackSection />
           <TestimonialsSection />
         </div>
