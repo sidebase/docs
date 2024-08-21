@@ -17,6 +17,7 @@ export default defineComponent({
     CiInputSelect,
     StackInputSelect,
     ModulesInputSelect,
+    DiamondSeperator,
     VTermynal,
     VtInput,
     VtText,
@@ -79,6 +80,7 @@ export default defineComponent({
         <VtText :line-delay="0">
           Welcome to <span class="text-green-500 font-bold">sidebase v0.6.1!</span>
         </VtText>
+        <br>
         <VtText :line-delay="0">
           <DiamondSeperator />
         </VtText>
