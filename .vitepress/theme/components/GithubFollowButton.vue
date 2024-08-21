@@ -1,18 +1,14 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import StarIcon from './StarIcon.vue'
 
-const props = defineProps<{
-  owner: string
-  repo: string
-}>()
+const props = defineProps<{ user: string }>()
 
 const count = ref(0)
 
 async function fetchCount() {
-  const res = await fetch(`https://api.github.com/repos/${props.owner}/${props.repo}`)
+  const res = await fetch(`https://api.github.com/users/${props.user}`)
   const resJson = await res.json()
-  count.value = resJson.stargazers_count ?? 0
+  count.value = resJson.followers ?? 0
 }
 onMounted(fetchCount)
 </script>
@@ -22,16 +18,15 @@ onMounted(fetchCount)
     <a
       title="Github"
       class="Button"
-      :href="`https://github.com/${owner}/${repo}`"
+      :href="`https://github.com/${user}`"
       target="_blank"
       rel="noreferrer noopener"
     >
-      <StarIcon />
-      Star
+      Follow
     </a>
     <a
       class="Count"
-      :href="`https://github.com/${owner}/${repo}/stargazers`"
+      :href="`https://github.com/${user}`"
       aria-label="{label}"
       target="_blank"
       rel="noreferrer noopener"

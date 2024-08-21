@@ -8,6 +8,7 @@ import CiInputSelect from './CiInputSelect.vue'
 import GitInputSelect from './GitInputSelect.vue'
 import NPMInputSelect from './NPMInputSelect.vue'
 import ModulesInputSelect from './ModulesInputSelect.vue'
+import DiamondSeperator from './DiamondSeperator.vue'
 
 export default defineComponent({
   components: {
@@ -16,6 +17,7 @@ export default defineComponent({
     CiInputSelect,
     StackInputSelect,
     ModulesInputSelect,
+    DiamondSeperator,
     VTermynal,
     VtInput,
     VtText,
@@ -73,13 +75,14 @@ export default defineComponent({
           <SheepIcon />
         </VtText>
         <VtText :line-delay="0">
-          <DiamondSeparator />
+          <DiamondSeperator />
         </VtText>
         <VtText :line-delay="0">
           Welcome to <span class="text-green-500 font-bold">sidebase v0.6.1!</span>
         </VtText>
+        <br>
         <VtText :line-delay="0">
-          <DiamondSeparator />
+          <DiamondSeperator />
         </VtText>
         <VtText :line-delay="0">
           sidebase helps you to create fully typesafe Nuxt 3 app in seconds!
@@ -95,7 +98,7 @@ export default defineComponent({
         <NPMInputSelect :next-id="nextId" />
         <br>
         <VtText :line-delay="0">
-          <DiamondSeparator />
+          <DiamondSeperator />
         </VtText>
         <VtText :line-delay="0">
           Now setting up <span class="text-green-500">my-first-sidebase-project</span>:
@@ -105,7 +108,7 @@ export default defineComponent({
         <VtText>✔ Adding README</VtText>
         <br>
         <VtText :line-delay="0">
-          <DiamondSeparator />
+          <DiamondSeperator />
         </VtText>
         <VtText :line-delay="0">
           ✨ Project setup finished. Next steps are:

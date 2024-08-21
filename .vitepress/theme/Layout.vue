@@ -2,16 +2,23 @@
 import DefaultTheme from 'vitepress/theme'
 
 import Banner from './components/Banner.vue'
-import Terminal from './components/Terminal/Terminal.vue'
+import Terminal from './components/Landing/Terminal/Terminal.vue'
 import SpinningGradient from './components/SpinningGradient.vue'
-// import GithubStarsButton from './components/GithubStarsButton.vue'
+import GithubFollowButton from './components/GithubFollowButton.vue'
+
+import StackSection from './components/Landing/Stack/Section.vue'
+import TestimonialsSection from './components/Landing/Testimonials/Section.vue'
+import FAQSection from './components/Landing/FAQ/Section.vue'
+import CustomDevelopmentSection from './components/Landing/CustomDevelopment.vue'
+import DocAd from './components/DocAd.vue'
+
+import Footer from './components/Landing/Footer.vue'
 
 const { Layout } = DefaultTheme
 
 // Banner Configuration
-const isBannerEnabled = true
+const isBannerEnabled = false
 const bannerConfig = {
-  // Leave text empty to disable the banner
   text: '✨ NuxtAuth v0.8.0 has been released! ✨',
   button: {
     href: 'https://github.com/sidebase/nuxt-auth/releases/tag/0.8.0',
@@ -22,11 +29,9 @@ const bannerConfig = {
 
 <template>
   <Layout>
-    <!--
     <template #nav-bar-content-after>
-      <GithubStarsButton owner="sidebase" repo="sidebase" />
+      <GithubFollowButton user="sidebase" />
     </template>
-    -->
 
     <template #home-hero-image>
       <Terminal />
@@ -34,7 +39,47 @@ const bannerConfig = {
 
     <template #home-hero-before>
       <Banner v-if="isBannerEnabled" v-bind="bannerConfig" />
-      <SpinningGradient />
+      <SpinningGradient class="pt-4" />
+    </template>
+
+    <template #home-features-after>
+      <div class="relative PageContainer">
+        <img class="absolute left-0 top-[2vh] w-full h-full opacity-50 select-none pointer-events-none dark:opacity-100" src="/backgrounds/purple-blur.webp" alt="Background Image">
+        <div class="container relative mx-auto space-y-24">
+          <StackSection />
+          <TestimonialsSection />
+          <FAQSection />
+          <CustomDevelopmentSection />
+        </div>
+      </div>
+      <Footer class="mt-10" />
+    </template>
+
+    <template #doc-after>
+      <div class="pt-6">
+        <DocAd />
+      </div>
     </template>
   </Layout>
 </template>
+
+<style scoped>
+.PageContainer {
+  position: relative;
+  padding: 0 24px;
+}
+@media (min-width: 640px) {
+  .PageContainer {
+      padding: 0 48px;
+  }
+}
+@media (min-width: 960px) {
+  .PageContainer {
+      padding: 0 64px;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1152px;
+}
+</style>

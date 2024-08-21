@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.GradientText {
+  background: linear-gradient(to right, #7bceb6 10%, #12a87b 40%, #0FCF97 60%, #7bceb6 90%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 1.5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
@@ -103,6 +121,14 @@
     --vp-c-bg-soft: #202127;
   }
   
+  /**
+   * Component: Home
+   * -------------------------------------------------------------------------- */
+
+  .VPContent.is-home .VPHome {
+    margin-bottom: 0px !important;
+  }
+
   /**
    * Component: Button
    * -------------------------------------------------------------------------- */
