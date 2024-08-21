@@ -8,6 +8,7 @@ import CiInputSelect from './CiInputSelect.vue'
 import GitInputSelect from './GitInputSelect.vue'
 import NPMInputSelect from './NPMInputSelect.vue'
 import ModulesInputSelect from './ModulesInputSelect.vue'
+import DiamondSeparator from './DiamondSeperator.vue'
 
 export default defineComponent({
   components: {

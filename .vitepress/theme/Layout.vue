@@ -7,6 +7,7 @@ import SpinningGradient from './components/SpinningGradient.vue'
 import GithubFollowButton from './components/GithubFollowButton.vue'
 
 import TestimonialsSection from './components/Landing/Testimonials/Section.vue'
+import StackSection from './components/Landing/Stack/Section.vue'
 
 const { Layout } = DefaultTheme
 
@@ -39,7 +40,8 @@ const bannerConfig = {
 
     <template #home-features-after>
       <div class="PageContainer mt-32">
-        <div class="container mx-auto">
+        <div class="container mx-auto space-y-20">
+          <StackSection />
           <TestimonialsSection />
         </div>
       </div>
