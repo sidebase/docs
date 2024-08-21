@@ -44,7 +44,7 @@ const bannerConfig = {
 
     <template #home-features-after>
       <div class="relative PageContainer">
-        <img class="absolute inset-0 w-full h-full opacity-50 select-none pointer-events-none dark:opacity-100" src="/backgrounds/purple-blur.webp" alt="Background Image">
+        <img class="absolute left-0 top-[2vh] w-full h-full opacity-50 select-none pointer-events-none dark:opacity-100" src="/backgrounds/purple-blur.webp" alt="Background Image">
         <div class="container relative mx-auto space-y-24">
           <StackSection />
           <TestimonialsSection />

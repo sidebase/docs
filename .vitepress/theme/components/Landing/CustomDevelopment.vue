@@ -1,9 +1,9 @@
 <template>
   <div class="relative isolate overflow-hidden border border-gray-300 dark:border-gray-800 bg-blue-50 dark:bg-gray-900 rounded-3xl px-6 py-10 text-center sm:px-16">
-    <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">
+    <h2 class="mx-auto max-w-2xl text-2xl font-bold tracking-tight md:text-4xl">
       In need of a consultant?
     </h2>
-    <p class="mx-auto max-w-xl text-lg leading-8">
+    <p class="mx-auto max-w-xl md:text-lg leading-8">
       Reach out and we can arrange a call!
     </p>
     <div class="mt-5 flex items-center justify-center gap-x-6">
