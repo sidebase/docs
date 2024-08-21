@@ -14,7 +14,6 @@ const { Layout } = DefaultTheme
 // Banner Configuration
 const isBannerEnabled = false
 const bannerConfig = {
-  // Leave text empty to disable the banner
   text: '✨ NuxtAuth v0.8.0 has been released! ✨',
   button: {
     href: 'https://github.com/sidebase/nuxt-auth/releases/tag/0.8.0',
