@@ -8,6 +8,7 @@ import GithubFollowButton from './components/GithubFollowButton.vue'
 
 import StackSection from './components/Landing/Stack/Section.vue'
 import TestimonialsSection from './components/Landing/Testimonials/Section.vue'
+import FAQSection from './components/Landing/FAQ/Section.vue'
 import CustomDevelopmentSection from './components/Landing/CustomDevelopment.vue'
 import DocAd from './components/DocAd.vue'
 
@@ -43,10 +44,11 @@ const bannerConfig = {
 
     <template #home-features-after>
       <div class="relative PageContainer">
-        <img class="absolute inset-0 w-full h-full opacity-50 dark:opacity-100" src="/backgrounds/purple-blur.webp" alt="Background Image">
+        <img class="absolute inset-0 w-full h-full opacity-50 select-none pointer-events-none dark:opacity-100" src="/backgrounds/purple-blur.webp" alt="Background Image">
         <div class="container relative mx-auto space-y-24">
           <StackSection />
           <TestimonialsSection />
+          <FAQSection />
           <CustomDevelopmentSection />
         </div>
       </div>

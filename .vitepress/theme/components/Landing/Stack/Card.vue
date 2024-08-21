@@ -5,7 +5,7 @@ defineProps<{ item: StackItem }>()
 </script>
 
 <template>
-  <div class="bg-gray-50 rounded-lg overflow-hidden transition-all ring-green-400 hover:ring-2 dark:bg-zinc-900 dark:ring-green-800">
+  <div class="bg-gray-100 rounded-lg overflow-hidden transition-all ring-green-400 hover:ring-2 dark:bg-zinc-900 dark:ring-green-800">
     <div class="flex justify-between items-center gap-2 p-4 bg-green-500/30 dark:bg-green-800/30">
       <div class="flex items-center gap-2">
         <img v-if="typeof item.logoPath === 'string'" :src="item.logoPath" class="size-8">
