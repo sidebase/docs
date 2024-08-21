@@ -1,6 +1,6 @@
 <template>
   <div class="relative isolate overflow-hidden border border-gray-300 dark:border-gray-800 bg-blue-50 dark:bg-gray-900 rounded-3xl px-6 py-10 sm:px-10">
-    <img class="absolute top-0 right-0 opacity-30 h-full py-12 px-10 pointer-events-none" src="/sidestream.svg">
+    <img class="absolute top-0 right-0 opacity-15 dark:opacity-30 h-full py-12 px-10 pointer-events-none" src="/sidestream.svg">
 
     <h2 class="relative max-w-2xl text-2xl font-bold tracking-tight md:text-4xl">
       In need of a consultant?
