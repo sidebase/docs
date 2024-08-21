@@ -31,10 +31,6 @@ export default defineConfig({
       { icon: 'x', link: 'https://twitter.com/sidebase_io' },
       { icon: 'discord', link: 'https://discord.gg/VzABbVsqAc' },
     ],
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Developed by SIDESTREAM',
-    },
     search: {
       provider: 'local',
     },

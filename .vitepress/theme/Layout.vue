@@ -8,6 +8,9 @@ import GithubFollowButton from './components/GithubFollowButton.vue'
 
 import StackSection from './components/Landing/Stack/Section.vue'
 import TestimonialsSection from './components/Landing/Testimonials/Section.vue'
+import CustomDevelopmentSection from './components/Landing/CustomDevelopment.vue'
+
+import Footer from './components/Landing/Footer.vue'
 
 const { Layout } = DefaultTheme
 
@@ -43,8 +46,10 @@ const bannerConfig = {
         <div class="container relative mx-auto space-y-20">
           <StackSection />
           <TestimonialsSection />
+          <CustomDevelopmentSection />
         </div>
       </div>
+      <Footer class="mt-10" />
     </template>
   </Layout>
 </template>
