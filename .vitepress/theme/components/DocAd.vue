@@ -1,12 +1,13 @@
 <template>
-  <div class="relative isolate overflow-hidden border border-gray-300 dark:border-gray-800 bg-blue-50 dark:bg-gray-900 rounded-lg p-4">
-    <h2 class="font-bold tracking-tight">
+  <div class="relative isolate overflow-hidden border border-gray-300 dark:border-gray-800 bg-blue-50 dark:bg-gray-900 rounded-lg p-5">
+    <img class="absolute top-0 right-0 opacity-30 h-full py-7 px-5 pointer-events-none" src="/sidestream.svg">
+    <h2 class="relative font-bold tracking-tight">
       In need of a consultant?
     </h2>
-    <p class="text-sm">
+    <p class="relative text-sm">
       Reach out and we can arrange a call!
     </p>
-    <div class="mt-4 flex flex-col items-start gap-y-2">
+    <div class="relative mt-4 flex flex-col items-start gap-y-2">
       <a
         href="mailto:nils@sidestream.tech"
         class="rounded-md bg-indigo-600 px-3 py-2 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

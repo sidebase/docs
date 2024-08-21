@@ -1,12 +1,14 @@
 <template>
-  <div class="relative isolate overflow-hidden border border-gray-300 dark:border-gray-800 bg-blue-50 dark:bg-gray-900 rounded-3xl px-6 py-10 text-center sm:px-16">
-    <h2 class="mx-auto max-w-2xl text-2xl font-bold tracking-tight md:text-4xl">
+  <div class="relative isolate overflow-hidden border border-gray-300 dark:border-gray-800 bg-blue-50 dark:bg-gray-900 rounded-3xl px-6 py-10 sm:px-16">
+    <img class="absolute top-0 right-0 opacity-30 h-full py-12 px-16 pointer-events-none" src="/sidestream.svg">
+
+    <h2 class="relative max-w-2xl text-2xl font-bold tracking-tight md:text-4xl">
       In need of a consultant?
     </h2>
-    <p class="mx-auto max-w-xl md:text-lg leading-8">
+    <p class="relative max-w-xl md:text-lg leading-8">
       Reach out and we can arrange a call!
     </p>
-    <div class="mt-5 flex items-center justify-center gap-x-6">
+    <div class="relative mt-5 flex items-center gap-x-6">
       <a href="mailto:nils@sidestream.tech" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
         Send us an email!
       </a>
