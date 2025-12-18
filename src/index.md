@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "sidebase"
-  text: "The productive way to build fullstack Nuxt 3+ applications."
+  text: "The productive way to build fullstack Nuxt applications."
   tagline: "sidebase is a web app development kit to build production ready fullstack apps quickly."
   actions:
     - theme: brand
