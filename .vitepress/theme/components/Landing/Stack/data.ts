@@ -11,7 +11,7 @@ export interface StackItem {
 export const stackItems: StackItem[] = [
   {
     name: 'Nuxt',
-    description: 'Nuxt 3 wraps Vue 3 to help us productive Vue 3 quicker than ever before: Fullstack web Apps, Static Websites, PWAs and more are all possible with Nuxt 3. Nuxt also optimizes all of these modes heavily to provide the best user-experience (UX) and developer-experience (DX).',
+    description: 'Nuxt wraps Vue 3 to help us productive Vue 3 quicker than ever before: Fullstack web Apps, Static Websites, PWAs and more are all possible with Nuxt. Nuxt also optimizes all of these modes heavily to provide the best user-experience (UX) and developer-experience (DX).',
     link: '/sidebase/components/nuxt-3',
     logoPath: '/brands/nuxt.svg',
   },
@@ -42,7 +42,7 @@ export const stackItems: StackItem[] = [
   },
   {
     name: 'NuxtAuth',
-    description: 'NuxtAuth wraps the very popular Auth.js library and brings its 23k github star power to the Nuxt 3 ecosystem. With nuxt-auth you can implement authentication via most possible OAuth providers in a few seconds.',
+    description: 'NuxtAuth wraps the very popular Auth.js library and brings its 23k github star power to the Nuxt 3+ ecosystem. With nuxt-auth you can implement authentication via most possible OAuth providers in a few seconds.',
     logoPath: '/brands/nuxt-auth.png',
   },
   {

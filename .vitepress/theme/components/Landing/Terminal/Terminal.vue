@@ -85,7 +85,7 @@ export default defineComponent({
           <DiamondSeperator />
         </VtText>
         <VtText :line-delay="0">
-          sidebase helps you to create fully typesafe Nuxt 3 app in seconds!
+          sidebase helps you to create fully typesafe Nuxt 3+ app in seconds!
         </VtText>
         <br>
         <VtText :line-delay="1000">
@@ -103,7 +103,7 @@ export default defineComponent({
         <VtText :line-delay="0">
           Now setting up <span class="text-green-500">my-first-sidebase-project</span>:
         </VtText>
-        <VtText>✔ Adding Nuxt 3 merino-template</VtText>
+        <VtText>✔ Adding Nuxt 3+ merino-template</VtText>
         <VtText>✔ Adding Nuxt modules</VtText>
         <VtText>✔ Adding README</VtText>
         <br>

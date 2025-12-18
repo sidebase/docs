@@ -34,7 +34,7 @@ npm run dev          // Start the development server, use CTRL+C to stop
 
 If you're not familiar with the technologies that are used here, we suggest that you [get help](/sidebase/welcome/getting-help) or read through the introductions of each technology in the usage section:
 - [Quick Start](/sidebase/welcome/quick-start)
-- [Nuxt 3](/sidebase/components/nuxt-3)
+- [Nuxt 3+](/sidebase/components/nuxt-3)
 - [TypeScript](/sidebase/components/typescript)
 - [Prisma ORM](/sidebase/components/prisma)
 - [Tailwind CSS](/sidebase/components/tailwindcss)
@@ -49,11 +49,11 @@ This is a quite common problem and often time comes down to one of the following
 
 The sidebase template is alive and well! It's used to setup Cheviot under the hood, so if you want to use the sidebase template, just select "Cheviot" in the first sidebase CLI step. You [can still find the sidebase source-code and template here](https://github.com/sidebase/sidebase). It is basically used unaltered for Cheviot.
 
-## Why are TypeScript and Nuxt 3 essential?
+## Why are TypeScript and Nuxt 3+ essential?
 
 TypeScript (TS) is essential because it provides guard-rails for development: TS let's us know what we talk about in our meeting when we discuss what the `roles: Roles[]` array contains, it informs our code-editor what we might be trying to do and let's it help us (think of GitHub Co-Pilot, but less AI), it guarantees certain kinds of correctness that we could only discover as a "bug" when our application was already deployed. The numerous benefits of TS are well known, if you want to read on, how about checking out [the official Why TypeScript page](https://www.typescriptlang.org/why-create-typescript).
 
-[Vue 3](https://vuejs.org/) is great - it has kept its promise of progressiveness and simplicity for web app development. It also has a rich ecosystem of libraries, modules and a sprawling developer community. [Nuxt 3](https://nuxt.com/) wraps Vue 3 to help us productive Vue 3 quicker than ever before: Fullstack web Apps, Statis Websites, PWAs and more are all possible with Nuxt 3. Nuxt also optimizes all of these modes heavily to provide the best user-experience (UX) and developer-experience (DX).
+[Vue 3](https://vuejs.org/) is great - it has kept its promise of progressiveness and simplicity for web app development. It also has a rich ecosystem of libraries, modules and a sprawling developer community. [Nuxt 3+](https://nuxt.com/) wraps Vue 3 to help us productive Vue 3 quicker than ever before: Fullstack web Apps, Statis Websites, PWAs and more are all possible with Nuxt 3+. Nuxt also optimizes all of these modes heavily to provide the best user-experience (UX) and developer-experience (DX).
 
 ## Where can I get help?
 

@@ -1,5 +1,5 @@
 ---
-description: "Quick-start and first-steps of using sidebase to create production-ready fullstack Vue 3 and Nuxt 3 applications."
+description: "Quick-start and first-steps of using sidebase to create production-ready fullstack Vue 3 and Nuxt 3+ applications."
 ---
 # Quick Start
 

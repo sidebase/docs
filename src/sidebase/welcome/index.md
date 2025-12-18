@@ -5,7 +5,7 @@ description: "sidebase is a web development kit and CLI to build production read
 
 sidebase is a web development kit to build production ready fullstack apps quickly. sidebase relies on modern, fully-typed and best-practice technology to achieve this goal. sidebase embraces the fullstack TypeScript approach to app development: Code sharing between client and server, reduced learning curve for engineers and code-reuse across apps are things we love about this approach. That said, you can also use sidebase to build client-side only apps.
 
-The core of sidebase are [Nuxt 3](https://nuxt.com/) and [TypeScript](https://www.typescriptlang.org/). On top of that sidebase provides different stacks that come ready with common components you need for a production application, including:
+The core of sidebase are [Nuxt 3+](https://nuxt.com/) and [TypeScript](https://www.typescriptlang.org/). On top of that sidebase provides different stacks that come ready with common components you need for a production application, including:
 - Database
 - API setup and typesafety
 - CI pipelines

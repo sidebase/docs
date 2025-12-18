@@ -1,5 +1,5 @@
 ---
-description: "TailwindCSS and Nuxt 3 are a match made in heaven! Use this page to learn how to use Tailwind CSS after setting it up via sidebase."
+description: "TailwindCSS and Nuxt 3+ are a match made in heaven! Use this page to learn how to use Tailwind CSS after setting it up via sidebase."
 ---
 # Tailwind CSS
 

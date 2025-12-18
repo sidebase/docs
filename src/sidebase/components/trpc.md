@@ -1,5 +1,5 @@
 ---
-description: "Nuxt 3 and tRPC make a great team. It's super easy to setup tRPC with Nuxt 3 by using sidebase - use this page to learn how to use tRPC after setting it up via sidebase."
+description: "Nuxt 3+ and tRPC make a great team. It's super easy to setup tRPC with Nuxt 3+ by using sidebase - use this page to learn how to use tRPC after setting it up via sidebase."
 ---
 # tRPC
 
@@ -7,7 +7,7 @@ tRPC rightly has the tagline "Move Fast and Break Nothing.": It allows you to de
 
 In addition tRPC allows automatic de-/serialization of complex data-types (think: `Date`, `Map`, `Set`, `Array`, ...) using `superjson`. So when you send a `Date`-object from the backend to your frontend, you can use it as a `Date` in your frontend, no need to manually call `new Date(...)` and add additional verification code for proper deserialization, amazing! Adding `zod` on top can give you automatic input validation of data that comes into your endpoints (see below).
 
-Under the hood sidebase uses the [`nuxt-trpc` module](https://trpc-nuxt.vercel.app/) to integrate tRPC. This module sets up a `tRPC` router in the Nuxt 3 backend. This router serves as the API you can then call. The "hello world" route that comes with sidebase looks as follows:
+Under the hood sidebase uses the [`nuxt-trpc` module](https://trpc-nuxt.vercel.app/) to integrate tRPC. This module sets up a `tRPC` router in the Nuxt 3+ backend. This router serves as the API you can then call. The "hello world" route that comes with sidebase looks as follows:
 ::: code-group
 ```ts [server/trpc/routers/index.ts]
 import { z } from 'zod'

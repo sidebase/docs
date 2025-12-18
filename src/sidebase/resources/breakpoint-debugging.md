@@ -1,5 +1,5 @@
 ---
-description: "Guide that describes how to perform breakpoint JS debugging of Vue 3 + Nuxt 3 + sidebase apps in VS Code."
+description: "Guide that describes how to perform breakpoint JS debugging of Vue 3 + Nuxt 3+ + sidebase apps in VS Code."
 ---
 # Breakpoint Debugging
 
