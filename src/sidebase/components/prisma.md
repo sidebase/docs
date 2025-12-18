@@ -1,5 +1,5 @@
 ---
-description: "Nuxt 3 and Prisma make a great team. It's super easy to setup Prisma ORM with Nuxt 3 by using sidebase - use this page to learn how to use Prisma after setting it up via sidebase."
+description: "Nuxt 3+ and Prisma make a great team. It's super easy to setup Prisma ORM with Nuxt 3+ by using sidebase - use this page to learn how to use Prisma after setting it up via sidebase."
 ---
 # Prisma ORM
 

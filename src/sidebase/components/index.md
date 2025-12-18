@@ -1,5 +1,5 @@
 ---
-description: "sidebase is made up of components like: Nuxt 3, TypeScript, Prisma ORM and more. This section explains how to use these different components in your sidebase Nuxt 3 app."
+description: "sidebase is made up of components like: Nuxt 3+, TypeScript, Prisma ORM and more. This section explains how to use these different components in your sidebase Nuxt 3+ app."
 ---
 # Overview
 

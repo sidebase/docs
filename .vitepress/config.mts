@@ -7,7 +7,7 @@ import { headConfig, sitemapConfig } from './head'
 export default defineConfig({
   title: 'sidebase',
   titleTemplate: ':title - by SIDESTREAM',
-  description: 'The productive way to build fullstack Nuxt 3 applications.',
+  description: 'The productive way to build fullstack Nuxt 3+ applications.',
   srcDir: 'src',
   base: '/',
   cleanUrls: true,

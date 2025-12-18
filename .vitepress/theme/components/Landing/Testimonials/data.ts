@@ -41,7 +41,7 @@ export const testimonials: Testimonial[] = [
   {
     name: 'Fabian',
     avatar: 'https://avatars.githubusercontent.com/madebyfabian',
-    text: 'Thank you so much for sharing! Trying to use nuxt 3 on a larger project currently, and struggling a lot in terms of project structure, best practices, which ecosystems & libs to use',
+    text: 'Thank you so much for sharing! Trying to use Nuxt 3+ on a larger project currently, and struggling a lot in terms of project structure, best practices, which ecosystems & libs to use',
     githubLink: 'https://github.com/madebyfabian',
     twitterLink: 'https://twitter.com/madebyfabian/status/1566393943578787840',
   },

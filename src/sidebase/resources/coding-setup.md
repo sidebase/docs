@@ -1,7 +1,7 @@
 ---
-description: "Guide that describes how to correctly configure Node, npm and VS Code with nvm and Volar for Vue 3 and Nuxt 3."
+description: "Guide that describes how to correctly configure Node, npm and VS Code with nvm and Volar for Vue 3 and Nuxt 3+."
 ---
-# Node, npm, VS Code setup for Vue and Nuxt 3
+# Node, npm, VS Code setup for Vue and Nuxt 3+
 
 If this is the first time you run a `npm` / `node` app on your setup, this guide will help you to set both of them up for your sidebase project:
 

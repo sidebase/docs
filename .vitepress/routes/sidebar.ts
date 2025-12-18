@@ -37,7 +37,7 @@ export const routes: DefaultTheme.Config['sidebar'] = {
           link: '/',
         },
         {
-          text: 'Nuxt 3',
+          text: 'Nuxt 3+',
           link: '/nuxt-3',
         },
         {
